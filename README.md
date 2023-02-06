@@ -1,2 +1,2 @@
 # Algorithm
-update for solved problems or solving problem
+update for solved algorithm problems
