@@ -7,7 +7,8 @@ func solution(_ elements:[Int]) -> Int {
     var ans = array
     
     for i in 1..<count {
-        array = zip(array.suffix(count), base[i..<i+count]).map{$0.0 + $0.1}
+        array = zip(array, base[i..<i+count]).map{$0.0 + $0.1}
+        ans.appned(contentsOf: array)
     }
     
     return Set(ans).count
