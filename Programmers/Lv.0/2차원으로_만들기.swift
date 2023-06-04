@@ -1,4 +1,5 @@
 import Foundation
+
 func solution(_ num_list:[Int], _ n:Int) -> [[Int]] {
     
     var array = [[Int]](repeating: [], count: num_list.count/n)
