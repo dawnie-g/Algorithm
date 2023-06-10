@@ -2,24 +2,34 @@ import Foundation
 
 func solution(_ dartResult:String) -> Int {
     var score = [Int]()
-    
+    var endIndex = 0
+
     for c in dartResult {
         if c.isNumber {
-            score.append(Int(String(c))!)
-        } else if c.isLetter {
+            if score.isEmpty && c == "0" {
+                score.append(0)
+            } else if c == "0" && score[endIndex] == 1 {
+                score[endIndex] = 10
+            } else {
+                score.append(Int(String(c))!)
+            }
+            endIndex = score.endIndex-1
+        } else {
             switch c {
-            case "S": continue
-            case "D": score[score.endIndex-1] = pow(score[score.endIndex-1], 2)
-            case "T": score[score.endIndex-1] = pow(score[score.endIndex-1], 3)
+            case "D": 
+                score[endIndex] *= score[endIndex]
+            case "T": 
+                score[endIndex] *= (score[endIndex] * score[endIndex])
             case "*":
-                score[score.endIndex-1] *= 2
-                guard score.endIndex > 1 else { continue }
-                score[score.endIndex-2] *= 2
-            case "#": score[score.endIndex-1] *= -1
-            default : continue
+                score[endIndex] *= 2
+                guard endIndex > 0 else { continue }
+                score[endIndex-1] *= 2
+            case "#": 
+                score[endIndex] *= -1
+            default : 
+                continue
             }
         }
     }
-    
     return score.reduce(0, +)
 }
