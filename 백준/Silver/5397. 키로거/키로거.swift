@@ -1,24 +1,26 @@
-
 let n = Int(readLine()!)!
 
 for _ in 0..<n {
-    let line = readLine()!.map{$0}
+    let input = readLine()!.map{$0}
     var left = [Character]()
     var right = [Character]()
     
-    for input in line {
-        switch input {
+    input.forEach {
+        switch $0 {
         case "-":
-            guard !left.isEmpty else { continue }
-            left.removeLast()
+            if !left.isEmpty {
+                left.removeLast()
+            }
         case "<":
-            guard !left.isEmpty else { continue }
-            right.append(left.removeLast())
+            if !left.isEmpty {
+                right.append(left.removeLast())
+            }
         case ">":
-            guard !right.isEmpty else { continue }
-            left.append(right.removeLast())
+            if !right.isEmpty {
+                left.append(right.removeLast())
+            }
         default: 
-            left.append(input)
+            left.append($0)
         }
     }
     print(String(left+right.reversed()))
