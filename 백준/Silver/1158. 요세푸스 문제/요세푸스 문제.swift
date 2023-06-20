@@ -4,17 +4,16 @@ let n = input[0]
 let k = input[1]
 
 var array = Array(1...n)
-var ans = [Int]()
-var target = -1
+var ans = "<"
+var idx = k-1
 
-while ans.count < n {
-    var count = 0
-    while count < k {
-        count += array[(target + 1) % n] != 0 ? 1 : 0
-        target = (target + 1) % n
+while array.count != 1 {
+    if idx >= array.count {
+        idx %= array.count
     }
-    array[target] = 0
-    ans.append(target + 1)
+    let target = array.remove(at: idx)
+    ans += String(target) + ", "
+    idx += k-1
 }
-
-print("<" + ans.map{String($0)}.joined(separator: ", ") + ">")
+ans += String(array.last!)
+print(ans + ">")
