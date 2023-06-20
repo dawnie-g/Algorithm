@@ -15,5 +15,5 @@ while array.count != 1 {
     ans += String(target) + ", "
     idx += k-1
 }
-ans += String(array.last!)
-print(ans + ">")
+ans += String(array.last!) + ">"
+print(ans)
