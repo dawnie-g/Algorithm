@@ -1,11 +1,8 @@
-let n = Int(readLine()!)!
-
-for _ in 0..<n {
-    let input = readLine()!.map{$0}
+for _ in 0..<Int(readLine()!)! {
     var left = [Character]()
     var right = [Character]()
     
-    input.forEach {
+    readLine()!.forEach {
         switch $0 {
         case "-":
             if !left.isEmpty {
