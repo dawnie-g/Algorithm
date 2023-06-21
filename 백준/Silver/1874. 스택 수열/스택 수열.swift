@@ -1,3 +1,4 @@
+
 func sequence(n: Int) -> String {
     var target = Int(readLine()!)!
     var stack = [Int]()
@@ -6,10 +7,10 @@ func sequence(n: Int) -> String {
     for i in 1...n {
         if stack.isEmpty || target > stack.last! {
             stack.append(i)
-            result.append("+")
+            result.append("+\n")
             while !stack.isEmpty && target == stack.last! {
                 stack.removeLast()
-                result.append("-")
+                result.append("-\n")
                 target = Int(readLine() ?? "0")!
             }
         }
@@ -22,11 +23,4 @@ func sequence(n: Int) -> String {
     return result
 }
 
-let string = sequence(n: Int(readLine()!)!)
-if string == "NO" {
-    print("NO")
-} else {
-    for c in string {
-        print(c)
-    }
-}
+print(sequence(n: Int(readLine()!)!))
