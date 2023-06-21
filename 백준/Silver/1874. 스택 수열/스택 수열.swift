@@ -14,7 +14,7 @@ func sequence(n: Int) -> String {
             }
         }
     }
-    return !stack.isEmpty && target != stack.last! ? "NO" : result
+    return stack.isEmpty ? result : "NO"
 }
 
 print(sequence(n: Int(readLine()!)!))
