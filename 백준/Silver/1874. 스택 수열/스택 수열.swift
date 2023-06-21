@@ -13,11 +13,8 @@ func sequence(n: Int) -> String {
                 target = Int(readLine() ?? "0")!
             }
         }
-        if !stack.isEmpty && i == n && target != stack.last!{
-            return "NO"
-        }
     }
-    return result
+    return !stack.isEmpty && target != stack.last! ? "NO" : result
 }
 
 print(sequence(n: Int(readLine()!)!))
