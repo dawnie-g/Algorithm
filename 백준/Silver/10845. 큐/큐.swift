@@ -10,24 +10,12 @@ for _ in 0..<n {
         queue[tail] = Int(command[1])!
         tail += 1
     case "pop":
-        guard head != tail else {
-            print(-1)
-            continue
-        }
-        print(queue[head])
-        head += 1
+        print(head == tail ? -1 : queue[head])
+        if head != tail { head += 1 }
     case "front":
-        guard head != tail else {
-            print(-1)
-            continue
-        }
-        print(queue[head])
+        print(head == tail ? -1 : queue[head])
     case "back":
-        guard head != tail else {
-            print(-1)
-            continue
-        }
-        print(queue[tail-1])
+        print(head == tail ? -1 : queue[tail-1])
     case "size":
         print(tail-head)
     case "empty":
