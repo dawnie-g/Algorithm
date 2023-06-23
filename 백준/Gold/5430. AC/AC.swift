@@ -9,12 +9,10 @@ func AC() -> String {
     for c in cmd {
         switch c {
         case "D":
-            guard head <= tail else {return "error"}
+            guard head <= tail else { return "error" }
             if rvs { // reversed
-                array[tail] = " "
                 tail -= 1
             } else { // not reversed
-                array[head] = " "
                 head += 1
             }
         case "R":
@@ -22,7 +20,7 @@ func AC() -> String {
         default: break
         }
     }
-    var result = array.filter{$0 != " "}
+    var result = tail >= head ? Array(array[head...tail]) : []
     result = rvs ? result.reversed() : result
     return "[\(result.joined(separator: ","))]"
 }
