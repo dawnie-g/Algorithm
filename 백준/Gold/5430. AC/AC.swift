@@ -1,7 +1,12 @@
 func AC() -> String {
     let cmd = readLine()!.map{String($0)}
     let lastIndex = Int(readLine()!)! - 1
-    var array = readLine()!.filter{$0 != "[" && $0 != "]"}.split(separator: ",")
+    
+    var string = readLine()!
+    string.removeLast()
+    string.removeFirst()
+    var array = string.split(separator: ",")
+    
     var head = 0
     var tail = lastIndex
     var rvs = false
