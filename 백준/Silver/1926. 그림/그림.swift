@@ -1,40 +1,42 @@
-let nm = readLine()!.split(separator: " ").map{Int(String($0))!}
-let n = nm[0], m = nm[1]
+let size = readLine()!.split(separator: " ").map{Int($0)!}
+let n = size[0], m = size[1]
+var arr = [[Int]]()
+var answer = [Int]()
 
-// BFS
-var vis = [[Bool]](repeating: [Bool](repeating: false,count: m), count: n)
-var queue = [[Int]]()
-var dx = [1, 0, -1, 0], dy = [0, 1, 0, -1]
-var paper = [[Int]]()
 for _ in 0..<n {
-    paper.append(readLine()!.split(separator: " ").map{Int(String($0))!})
+    arr.append(readLine()!.split(separator: " ").map{Int($0)!})
 }
-
-// ans
-var num = 0
-var mx = 0
 
 for i in 0..<n {
-    for j in 0..<m {
-        guard paper[i][j] == 1 && !vis[i][j] else { continue } // start point
-        num += 1
-        queue.append([i,j])
-        vis[i][j] = true
-        var count = 0
-        while !queue.isEmpty {
-            count += 1
-            let cur = queue.removeFirst()
-            for idx in 0..<4 {
-                var nx = cur[0] + dx[idx]
-                var ny = cur[1] + dy[idx]
-                guard nx >= 0 && nx < n && ny >= 0 && ny < m else { continue }
-                guard !vis[nx][ny] && paper[nx][ny] == 1 else { continue }
-                vis[nx][ny] = true
-                queue.append([nx, ny])
-            }
+    for j in 0..<m{
+        if arr[i][j] == 1 {
+            answer.append(bfs(i,j))
         }
-        mx = max(mx, count)
     }
 }
-print(num)
-print(mx)
+
+print(answer.count)
+print(answer.max() ?? 0)
+
+func bfs(_ r:Int, _ c:Int) -> Int {
+    let dx = [-1,1,0,0], dy = [0,0,-1,1]
+    
+    var queue = [(r,c)]
+    var idx = 0
+    arr[r][c] = 0
+    
+    while queue.count > idx {
+        let (x,y) = queue[idx]
+        idx += 1
+        
+        for i in 0..<4 {
+            let (nx,ny) = (x + dx[i], y + dy[i])
+            
+            if (0..<n).contains(nx)&&(0..<m).contains(ny) && arr[nx][ny] == 1 {
+                arr[nx][ny] = 0
+                queue.append((nx,ny))
+            }
+        }
+    }
+    return queue.count
+}
