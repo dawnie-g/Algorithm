@@ -18,8 +18,8 @@ func paper(_ n: Int, _ r: Int, _ c: Int) {
     }
     
     // 9개로 나눠서 재탐색
-    for i in (0..<3).map({r + $0 * n/3}) {
-        for j in (0..<3).map({c + $0 * n/3}) {
+    for i in (0..<3).map({$0 * n/3 + r}) {
+        for j in (0..<3).map({$0 * n/3 + c}) {
             paper(n/3, i, j)
         }
     }
