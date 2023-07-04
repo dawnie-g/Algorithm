@@ -1,18 +1,16 @@
 let n = Int(readLine()!)!
 
-func star(_ n: Int, pattern: [String]) {
-    if n == 3 {
-        var blankNum = pattern.last!.count / 2
-        for i in 0...blankNum {
-            let blank = String(repeating: " ", count: blankNum-i)
-            print(blank + pattern[i] + blank)
-        }
-        return
-    }
+func star(_ n: Int) -> [String] {
+    if n == 3 { return ["  *  ", " * * ", "*****"] }
     
-    let between = pattern.last!.count
-    let add = (0..<pattern.count).map{pattern[$0] + String(repeating: " ", count: between - 2*$0) + pattern[$0]}
-    star(n/2, pattern: pattern + add)
+    let pat = star(n/2)
+    let space = String(repeating: " ", count: n/2)
+    var result = [String]()
+    
+    for p in pat { result.append(space + p + space) }
+    for p in pat { result.append(p + " " + p) }
+    
+    return result
 }
 
-star(n, pattern: ["*", "* *", "*****"])
+print(star(n).joined(separator: "\n"))
