@@ -8,10 +8,8 @@ func backTracking(_ k: Int, _ line: String, _ prev: Int) {
         str += line + "\n"
         return
     }
-    for i in 0..<n {
-        if prev <= num[i] {
-            backTracking(k+1, line + "\(num[i]) ", num[i])
-        }
+    for i in 0..<n where prev <= num[i] {
+        backTracking(k+1, line + "\(num[i]) ", num[i])
     }
 }
 
