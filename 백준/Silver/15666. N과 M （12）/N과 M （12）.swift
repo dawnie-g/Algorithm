@@ -17,9 +17,7 @@ func backTracking(_ k: Int, _ line: [Int]) {
     for i in 0..<n {
         guard i == 0 || (i > 0 && num[i-1] != num[i]) else { continue }
         guard line.isEmpty || (!line.isEmpty && line.last! <= num[i]) else { continue }
-        remain[num[i]] -= 1
         backTracking(k+1, line + [num[i]])
-        remain[num[i]] += 1
     }
 }
 backTracking(0, [])
