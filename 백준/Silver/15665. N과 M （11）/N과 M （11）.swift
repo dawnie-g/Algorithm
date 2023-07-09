@@ -8,18 +8,17 @@ for i in num {
 }
 var str = ""
 
-func backTracking(_ k: Int, _ line: [Int]) {
+func backTracking(_ k: Int, _ line: String) {
     if k == m {
-        str += line.map{String($0)}.joined(separator: " ")
-        str += "\n"
+        str += line + "\n"
         return
     }
     for i in 0..<n {
         guard i == 0 || (i > 0 && num[i-1] != num[i]) else { continue }
         remain[num[i]] -= 1
-        backTracking(k+1, line + [num[i]])
+        backTracking(k+1, line + "\(num[i]) ")
         remain[num[i]] += 1
     }
 }
-backTracking(0, [])
+backTracking(0, "")
 print(str)
