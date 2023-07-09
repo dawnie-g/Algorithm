@@ -5,8 +5,7 @@ var isUsed = [Bool]()
 while input != [0] {
     isUsed = [Bool](repeating: false, count: input[0]+1)
     backTracking(0, "", 0)
-    print(ans)
-    ans = ""
+    ans += "\n"
     input = readLine()!.split(separator: " ").map{Int(String($0))!}
 }
 
@@ -21,3 +20,4 @@ func backTracking(_ depth: Int, _ line: String, _ prev: Int) {
         isUsed[i] = false
     }
 }
+print(ans)
