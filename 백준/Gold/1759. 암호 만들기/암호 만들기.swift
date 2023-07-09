@@ -13,8 +13,7 @@ func backTracking(_ depth: Int, _ line: String, _ prev: Character) {
         ans += line + "\n"
         return
     }
-    for i in 0..<c where !isUsed[i]{
-        guard line.isEmpty || letters[i].asciiValue! > prev.asciiValue! else { continue }
+    for i in 0..<c where !isUsed[i] && letters[i].asciiValue! > prev.asciiValue! {
         if vowel.contains(letters[i]) { aeiou += 1 }
         isUsed[i] = true
         backTracking(depth+1, line + "\(letters[i])", letters[i])
