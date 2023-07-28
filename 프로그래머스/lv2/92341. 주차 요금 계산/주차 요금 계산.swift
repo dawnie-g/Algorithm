@@ -28,7 +28,7 @@ func solution(_ fees:[Int], _ records:[String]) -> [Int] {
     }
 }
 
-func dm(ci: String, co: String) -> Int {
+func dm(ci: String, co: String) -> Int { // calculate minute of parking time
     let ci = ci.split(separator: ":").map{Int(String($0))!}
     let co = co.split(separator: ":").map{Int(String($0))!}
     return (co[0]-ci[0]) * 60 + (co[1] - ci[1])
