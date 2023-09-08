@@ -1,5 +1,4 @@
 let n = Int(readLine()!)!
-var times = readLine()!.split(separator: " ").map{Int($0)!}.sorted(by: >)
-times = (0..<n).map{times[$0]*($0+1)}
+let times = readLine()!.split(separator: " ").map{Int($0)!}.sorted(by: >)
 
-print(times.reduce(0, +))
+print((0..<n).map{times[$0]*($0+1)}.reduce(0, +))
