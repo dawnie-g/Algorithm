@@ -58,17 +58,17 @@ final class FileIO {
 
 let file = FileIO()
 let n = file.readInt()
-var member = [[String]]()
+var member = Array(repeating: (0, ""), count: n)
 var str = ""
 
-for _ in 0..<n {
-    member.append([file.readString(), file.readString()])
+for i in 0..<n {
+    member[i] = (file.readInt(), file.readString())
 }
 
-member.sort { Int($0[0])! < Int($1[0])! }
+member.sort { $0.0 < $1.0 }
 
 for m in member {
-    str += "\(m[0]) \(m[1])\n"
+    str += "\(m.0) \(m.1)\n"
 }
 
 print(str)
