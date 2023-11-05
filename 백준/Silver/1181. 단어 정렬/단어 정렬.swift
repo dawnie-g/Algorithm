@@ -58,17 +58,18 @@ final class FileIO {
 
 let file = FileIO()
 let n = file.readInt()
-var words = [String](repeating: "", count: n)
+var words = Array(repeating: (0, ""), count: n)
 var lastWord = ""
 var str = ""
 
 for i in 0..<n {
-    words[i] = file.readString()
+    let word = file.readString()
+    words[i] = (word.count, word)
 }
-words.sort { ($0.count, $0) < ($1.count, $1) }
+words.sort { ($0.0, $0.1) < ($1.0, $1.1) }
 
-for word in words where lastWord != word {
-    str += "\(word)\n"
-    lastWord = word
+for word in words where lastWord != word.1 {
+    str += "\(word.1)\n"
+    lastWord = word.1
 }
 print(str)
