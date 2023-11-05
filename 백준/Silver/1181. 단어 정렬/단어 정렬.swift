@@ -67,10 +67,7 @@ for i in 0..<n {
 }
 words.sort { ($0.count, $0) < ($1.count, $1) }
 
-for word in words {
-    if lastWord == word {
-        continue
-    }
+for word in words where lastWord != word {
     str += "\(word)\n"
     lastWord = word
 }
