@@ -1,16 +1,10 @@
 import Foundation
 
 let word = readLine()!
-let len = word.count
-var arr = [String](repeating: "", count: len)
-var str = ""
+var arr = [String](repeating: "", count: word.count)
 
-for i in 0..<len {
+for i in 0..<word.count {
     arr[i] = String(word.suffix(i+1))
 }
 
-arr.sort(by: <)
-for i in 0..<len {
-    str += "\(arr[i])\n"
-}
-print(str)
+print(arr.sorted().joined(separator: "\n"))
