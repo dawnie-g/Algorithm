@@ -1,28 +1,24 @@
 import Foundation
 
 let n = Int(readLine()!)!
-var serial = [String](repeating: "", count: n)
+var serial = Array(repeating: ("", 0, 0), count: n)
 var str = ""
 
 for i in 0..<n {
-    serial[i] = readLine()!
+    let line = readLine()!
+    serial[i] = (line, line.count, line.reduce(0, { (Int(String($0)) ?? 0) + (Int(String($1)) ?? 0 )} ))
 }
 serial.sort {
-    let cntA = $0.count
-    let cntB = $1.count
-    let sumA = $0.filter{$0.isNumber}.reduce(0, { Int(String($0))! + Int(String($1))! })
-    let sumB = $1.filter{$0.isNumber}.reduce(0, { Int(String($0))! + Int(String($1))! })
-    
-    if cntA == cntB && sumA == sumB {
+    if $0.1 == $1.1 && $0.2 == $1.2 {
         return $0 < $1
-    } else if cntA == cntB {
-        return sumA < sumB
+    } else if $0.1 == $1.1 {
+        return $0.2 < $1.2
     } else {
-        return cntA < cntB
+        return $0.1 < $1.1
     }
 }
 
 for s in serial {
-    str += "\(s)\n"
+    str += "\(s.0)\n"
 }
 print(str)
