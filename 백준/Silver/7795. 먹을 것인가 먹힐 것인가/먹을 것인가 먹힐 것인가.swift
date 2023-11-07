@@ -5,14 +5,22 @@ var str = ""
 
 for _ in 0..<t {
     let n = readLine()!
-    var A = readLine()!.split(separator: " ").map{Int($0)!}
-    var B = readLine()!.split(separator: " ").map{Int($0)!}.sorted()
+    let A = readLine()!.split(separator: " ").map{Int($0)!}.sorted(by: >)
+    let B = readLine()!.split(separator: " ").map{Int($0)!}.sorted(by: >)
+    let sizeB = B.count
+    var cntB = B.count
+    var idxB = 0
     var cnt = 0
     
     for a in A {
-        for b in B {
-            guard a > b else { break }
-            cnt += 1
+        while idxB < sizeB {
+            if a > B[idxB] {
+                cnt += cntB
+                break
+            } else {
+                idxB += 1
+                cntB -= 1
+            }
         }
     }
     str += "\(cnt)\n"
