@@ -22,7 +22,6 @@ func solution(_ user_id:[String], _ banned_id:[String]) -> Int {
     
     let size = possible_id.filter{!$0.isEmpty}.count
     var combis = [[String]]()
-    print(possible_id.filter{!$0.isEmpty})
     func combi(_ depth: Int, _ curr: [String], _ idx: Int) {
         if depth == size {
             if !combis.contains(curr.sorted()) {
