@@ -15,6 +15,7 @@ func solution(_ fees:[Int], _ records:[String]) -> [Int] {
         }
     }
     
+    // 
     for i in 0..<9999 where parking[i] != "" {
         total[i] += dm(ci: parking[i], co: "23:59")
         parking[i].removeAll()
