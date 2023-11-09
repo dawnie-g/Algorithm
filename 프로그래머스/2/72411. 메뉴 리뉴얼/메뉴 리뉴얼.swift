@@ -1,32 +1,15 @@
 import Foundation
 
+var menu = [String:Int]()
+
 func solution(_ orders:[String], _ course:[Int]) -> [String] {
-    var menu = [String:Int]()
-    
     for i in 0..<orders.count-1 {
         for j in i+1..<orders.count {
             let common = orders[i].filter{orders[j].contains($0)}.sorted()
-            
             guard common.count > 1 else { continue }
+            
             for n in course {
-                func combi(_ depth: Int, _ curr: [Character], _ idx: Int) {
-                    if depth == n {
-                        let c = curr.map{String($0)}.sorted().joined()
-                        guard !c.isEmpty else { return }
-                        if !menu.keys.contains(c) {
-                            menu[c] = 1
-                        } else {
-                            menu[c]! += 1
-                        }
-                        return
-                    }
-
-                    for i in idx..<common.count {
-                        combi(depth + 1, curr + [common[i]], i + 1)
-                    }
-                    return
-                }
-                combi(0, [], 0)
+                combi(0, [], 0, n, common)
             }
         }
     }
@@ -43,4 +26,22 @@ func solution(_ orders:[String], _ course:[Int]) -> [String] {
     }
     
     return ans.filter{$0.0 != 0}.flatMap{$0.1}.sorted()
+}
+
+func combi(_ depth: Int, _ curr: [Character], _ idx: Int, _ targetNum: Int, _ arr: [Character]) {
+    if depth == targetNum {
+        let c = curr.map{String($0)}.sorted().joined()
+        guard !c.isEmpty else { return }
+        if !menu.keys.contains(c) {
+            menu[c] = 1
+        } else {
+            menu[c]! += 1
+        }
+        return
+    }
+
+    for i in idx..<arr.count {
+        combi(depth + 1, curr + [arr[i]], i + 1, targetNum, arr)
+    }
+    return
 }
