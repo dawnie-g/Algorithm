@@ -1,1 +1,0 @@
-func solution(_ a:Int, _ b:Int) -> Int64 { Int64(([a, b].min()!...[a, b].max()!).reduce(0, +))}
