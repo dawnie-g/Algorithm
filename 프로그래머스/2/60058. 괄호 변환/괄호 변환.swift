@@ -19,7 +19,7 @@ func solution(_ p:String) -> String {
             }
         }
         
-        if u.first! == "(" && u.last! == ")" {
+        if u.first! == "(" {
             return u + recursive(v: v)
         } else {
             var str = "("
