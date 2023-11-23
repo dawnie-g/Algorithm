@@ -4,6 +4,7 @@ let n = Int(readLine()!)!
 let list = readLine()!.split(separator: " ").map{Int($0)!}.sorted()
 let m = Int(readLine()!)!
 let finding = readLine()!.split(separator: " ").map{Int($0)!}
+var str = ""
 
 find: for num in finding {
     var minVal = 0
@@ -16,9 +17,10 @@ find: for num in finding {
         } else if num > list[mid] {
             minVal = mid + 1
         } else if num == list[mid] {
-            print(1)
+            str += "1\n"
             continue find
         }
     }
-    print(0)
+    str += "0\n"
 }
+print(str)
