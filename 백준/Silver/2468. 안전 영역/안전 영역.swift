@@ -1,5 +1,3 @@
-import Foundation
-
 let n = Int(readLine()!)!
 var heights = [[Int]](repeating: [Int](repeating: 0, count: n), count: n)
 var minH = Int.max
@@ -15,39 +13,20 @@ for i in 0..<n {
     }
 }
 
-let directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-
-func bfs(_ start: (Int, Int), _ height: Int, _ visited: inout [[Bool]]) {
-    var queue = [start]
-    var idx = 0
-    visited[start.0][start.1] = true
-    
-    while idx < queue.count {
-        let (x, y) = queue[idx]
-        idx += 1
-        
-        for dir in directions {
-            let nx = x + dir.0
-            let ny = y + dir.1
-            
-            if nx >= 0 && nx < n && ny >= 0 && ny < n && !visited[nx][ny] && heights[nx][ny] > height {
-                visited[nx][ny] = true
-                queue.append((nx, ny))
-            }
-        }
+for height in minH-1...maxH-1 {
+    guard minH != maxH else {
+        ans = 1
+        break
     }
-}
-
-for height in (minH-1)...(maxH-1) {
+    
     var visited = [[Bool]](repeating: [Bool](repeating: false, count: n), count: n)
     var count = 0
     
     for i in 0..<n {
         for j in 0..<n {
-            if heights[i][j] > height && !visited[i][j] {
-                bfs((i, j), height, &visited)
-                count += 1
-            }
+            guard heights[i][j] > height && !visited[i][j] else { continue }
+            bfs((i, j), height, &visited)
+            count += 1
         }
     }
     
@@ -55,3 +34,21 @@ for height in (minH-1)...(maxH-1) {
 }
 
 print(ans)
+
+func bfs(_ start: (Int, Int), _ height: Int, _ visited: inout [[Bool]]) {
+    var queue = [start]
+    var idx = 0
+    visited[start.0][start.1] = true
+    
+    while queue.count > idx {
+        let (x, y) = queue[idx]
+        idx += 1
+        
+        for i in [(1, 0), (-1, 0), (0, 1), (0, -1)] {
+            let (nx, ny) = (x + i.0, y + i.1)
+            guard 0..<n ~= nx && 0..<n ~= ny && !visited[nx][ny] && heights[nx][ny] > height else { continue }
+            visited[nx][ny] = true
+            queue.append((nx, ny))
+        }
+    }
+}
