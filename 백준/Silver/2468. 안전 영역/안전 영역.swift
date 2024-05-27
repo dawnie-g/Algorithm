@@ -66,7 +66,6 @@ var heights = [[Int]](repeating: [Int](repeating: 0, count: n), count: n)
 let visited = [[Bool]](repeating: [Bool](repeating: false, count: n), count: n)
 var minH = Int.max
 var maxH = Int.min
-var currMinH = Int.max
 var noZeroCnt = n*n
 var ans = 0
 
@@ -79,21 +78,19 @@ for i in 0..<n {
     }
 }
 
-while noZeroCnt > 0 {
+for _ in 0..<101 {
     if minH == maxH {
         ans = 1
         break
     }
     
     var currVisited = visited
-    currMinH = Int.max
     
     for i in 0..<n {
         for j in 0..<n {
-            let h = heights[i][j] - minH
+            let h = heights[i][j] - 1
             if h > 0 {
                 heights[i][j] = h
-                currMinH = min(currMinH, h)
             } else if heights[i][j] > 0 {
                 noZeroCnt -= 1
                 heights[i][j] = 0
@@ -112,7 +109,6 @@ while noZeroCnt > 0 {
     }
     
     ans = max(ans, count)
-    minH = currMinH
 }
 
 print(ans)
