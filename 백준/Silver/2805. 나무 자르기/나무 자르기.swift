@@ -74,19 +74,18 @@ for i in 0..<n {
     high = max(high, trees[i])
 }
 
+// 얻을 수 있는 목재의 양
 func getWoodAmount(cut: Int) -> Int {
     var totalWood = 0
     for tree in trees {
         if tree > cut {
             totalWood += (tree - cut)
         }
-        if totalWood >= m {
-            return totalWood
-        }
     }
     return totalWood
 }
 
+// 이분탐색
 while low <= high {
     let mid = (low + high) / 2
     let wood = getWoodAmount(cut: mid)
