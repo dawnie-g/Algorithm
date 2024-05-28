@@ -65,7 +65,6 @@ let n = fIO.readInt()
 let m = fIO.readInt()
 var trees = [Int](repeating: 0, count: n)
 var longest = Int.min
-var prevLength = -1
 var close = Int.max
 
 for i in 0..<n {
@@ -97,7 +96,6 @@ outer: while true {
         close = totalLength - m
         cut += d
     }
-    prevLength = totalLength
 }
 
 print(cut)
