@@ -77,12 +77,13 @@ var d = cut
 
 outer: while true {
     d = d / 2 == 0 ? 1 : d / 2
-    let treesCut: [Int] = trees.map {
-        let l = $0 - cut
-        return l >= 0 ? l : 0
-    }
     
-    let totalLength = treesCut.reduce(0, +)
+    var totalLength = 0
+    for tree in trees {
+        var wood = tree - cut
+        wood = wood >= 0 ? wood : 0
+        totalLength += wood
+    }
     
     switch totalLength {
     case 0..<m:
