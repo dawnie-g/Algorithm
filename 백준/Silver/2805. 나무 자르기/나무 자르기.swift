@@ -64,38 +64,39 @@ let fIO = FileIO()
 let n = fIO.readInt()
 let m = fIO.readInt()
 var trees = [Int](repeating: 0, count: n)
-var longest = Int.min
-var close = Int.max
+
+var low = 0
+var high = -1
+var result = 0
 
 for i in 0..<n {
     trees[i] = fIO.readInt()
-    longest = max(trees[i], longest)
+    high = max(high, trees[i])
 }
-var cut = longest / 2
-var d = cut
 
-outer: while true {
-    d = d / 2 == 0 ? 1 : d / 2
-    
-    var totalLength = 0
+func getWoodAmount(cut: Int) -> Int {
+    var totalWood = 0
     for tree in trees {
-        var wood = tree - cut
-        wood = wood >= 0 ? wood : 0
-        totalLength += wood
-    }
-    
-    switch totalLength {
-    case 0..<m:
-        cut -= d
-    case m:
-        break outer
-    default:
-        if close == totalLength - m {
-            break outer
+        if tree > cut {
+            totalWood += (tree - cut)
         }
-        close = totalLength - m
-        cut += d
+        if totalWood >= m {
+            return totalWood
+        }
+    }
+    return totalWood
+}
+
+while low <= high {
+    let mid = (low + high) / 2
+    let wood = getWoodAmount(cut: mid)
+    
+    if wood >= m {
+        result = mid
+        low = mid + 1
+    } else {
+        high = mid - 1
     }
 }
 
-print(cut)
+print(result)
