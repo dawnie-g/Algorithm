@@ -74,14 +74,19 @@ for _ in 0..<n-1 {
 }
 
 var visited = [Bool](repeating: false, count: n + 1)
-var stack = [1]
+var queue = [Int](repeating: 0, count: n)
+queue[0] = 1
+var head = 0
+var tail = 1
 
-while !stack.isEmpty {
-    let node = stack.removeLast()
+while head != tail {
+    let node = queue[head]
+    head += 1
     visited[node] = true
     
     for child in tree[node] where !visited[child] {
-        stack.append(child)
+        queue[tail] = child
+        tail += 1
         parent[child] = node
     }
 }
