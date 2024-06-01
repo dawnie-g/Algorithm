@@ -86,6 +86,8 @@ while !stack.isEmpty {
     }
 }
 
+var ans = ""
 for i in 2...n {
-    print(parent[i])
+    ans += "\(parent[i])\n"
 }
+print(ans)
