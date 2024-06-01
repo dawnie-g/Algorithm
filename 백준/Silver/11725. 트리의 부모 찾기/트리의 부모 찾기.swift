@@ -75,7 +75,6 @@ for _ in 0..<n-1 {
 
 var visited = [Bool](repeating: false, count: n + 1)
 var stack = [1]
-visited[1] = true
 
 while !stack.isEmpty {
     let node = stack.removeLast()
