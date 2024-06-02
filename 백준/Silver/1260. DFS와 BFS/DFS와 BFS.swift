@@ -79,7 +79,6 @@ for vertex in graph {
 }
 
 var dfs = ""
-var stack = [Int]()
 var visited = [Bool](repeating: false, count: n + 1)
 func dfs(_ vertex: Int) {
     guard !visited[vertex] else { return }
