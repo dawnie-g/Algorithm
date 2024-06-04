@@ -62,26 +62,28 @@ final class FileIO {
 
 let fIO = FileIO()
 let n = fIO.readInt()
-var arr = [Int](repeating: 0, count: n + 1)
-var dp = arr
-var tail = 1
+var arr = [Int](repeating: 0, count: n)
+var tail = 0
 
-for _ in 1...n {
+for _ in 0..<n {
     let val = fIO.readInt()
-    if val >= arr[tail-1] {
+    if tail == 0 || val > arr[tail-1] {
         arr[tail] = val
-        if val > arr[tail-1] {
-            dp[tail] = dp[tail-1] + 1
-            tail += 1
-        } else {
-            arr[tail] = val
-            dp[tail] = dp[tail-1]
-        }
+        tail += 1
     } else {
-        for j in 0..<tail where val > arr[j] && val < arr[j+1] {
-            arr[j + 1] = val
+        var left = 0
+        var right = tail - 1
+        
+        while left < right {
+            let mid = (left + right) / 2
+            if arr[mid] < val {
+                left = mid + 1
+            } else {
+                right = mid
+            }
         }
+        arr[left] = val
     }
 }
 
-print(tail-1)
+print(tail)
