@@ -92,9 +92,7 @@ for _ in 0..<m {
     if unionFind == 0 {
         union(a, b)
     } else {
-        let rootA = find(a)
-        let rootB = find(b)
-        str += rootA == rootB ? "YES\n" : "NO\n"
+        str += find(a) == find(b) ? "YES\n" : "NO\n"
     }
 }
 print(str)
