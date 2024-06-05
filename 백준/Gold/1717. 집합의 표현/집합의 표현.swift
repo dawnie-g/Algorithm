@@ -73,10 +73,7 @@ func find(_ x: Int) -> Int {
     return parent[x]
 }
 
-func union(_ x: Int, _ y: Int) {
-    let rootX = find(x)
-    let rootY = find(y)
-    
+func union(_ rootX: Int, _ rootY: Int) {
     if rootX < rootY {
         parent[rootY] = rootX
     } else {
@@ -88,11 +85,13 @@ for _ in 0..<m {
     let unionFind = fIO.readInt()
     let a = fIO.readInt()
     let b = fIO.readInt()
+    let rootA = find(a)
+    let rootB = find(b)
     
     if unionFind == 0 {
-        union(a, b)
+        union(rootA, rootB)
     } else {
-        str += find(a) == find(b) ? "YES\n" : "NO\n"
+        str += rootA == rootB ? "YES\n" : "NO\n"
     }
 }
 print(str)
