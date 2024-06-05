@@ -64,7 +64,7 @@ let fIO = FileIO()
 let n = fIO.readInt()
 let m = fIO.readInt()
 var parent = Array(0...n)
-var rank = [Int](repeating: 0, count: n + 1)
+var str = ""
 
 func find(_ x: Int) -> Int {
     if parent[x] != x {
@@ -94,6 +94,7 @@ for _ in 0..<m {
     } else {
         let rootA = find(a)
         let rootB = find(b)
-        print(rootA == rootB ? "YES" : "NO")
+        str += rootA == rootB ? "YES\n" : "NO\n"
     }
 }
+print(str)
