@@ -77,15 +77,10 @@ func union(_ x: Int, _ y: Int) {
     let rootX = find(x)
     let rootY = find(y)
     
-    if rootX != rootY {
-        if rank[rootX] > rank[rootY] {
-            parent[rootY] = rootX
-        } else if rank[rootX] < rank[rootY] {
-            parent[rootX] = rootY
-        } else {
-            parent[rootY] = rootX
-            rank[rootX] += 1
-        }
+    if rootX < rootY {
+        parent[rootY] = rootX
+    } else {
+        parent[rootX] = rootY
     }
 }
 
