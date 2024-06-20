@@ -6,6 +6,7 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/KwakDADA/Algorithm/tree/master/0001-two-sum) |
+| [0033-search-in-rotated-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0033-search-in-rotated-sorted-array) |
 # Hash Table
 |  |
 | ------- |
@@ -17,6 +18,7 @@ update for solved algorithm problems
 # Binary Search
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0033-search-in-rotated-sorted-array) |
 | [0069-sqrtx](https://github.com/KwakDADA/Algorithm/tree/master/0069-sqrtx) |
 | [0374-guess-number-higher-or-lower](https://github.com/KwakDADA/Algorithm/tree/master/0374-guess-number-higher-or-lower) |
 # Interactive
