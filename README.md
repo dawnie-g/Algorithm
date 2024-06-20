@@ -18,3 +18,8 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0069-sqrtx](https://github.com/KwakDADA/Algorithm/tree/master/0069-sqrtx) |
+| [0374-guess-number-higher-or-lower](https://github.com/KwakDADA/Algorithm/tree/master/0374-guess-number-higher-or-lower) |
+# Interactive
+|  |
+| ------- |
+| [0374-guess-number-higher-or-lower](https://github.com/KwakDADA/Algorithm/tree/master/0374-guess-number-higher-or-lower) |
