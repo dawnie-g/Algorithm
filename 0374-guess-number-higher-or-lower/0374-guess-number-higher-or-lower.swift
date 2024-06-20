@@ -14,9 +14,11 @@ class Solution : GuessGame {
 
         while low < high {
             let mid = (low + high) / 2
-            if guess(mid) == 0 {
+            let ans = guess(mid)
+
+            if ans == 0 {
                 return mid
-            } else if guess(mid) == -1 {
+            } else if ans == -1 {
                 high = mid - 1
             } else {
                 low = mid + 1
