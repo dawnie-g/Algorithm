@@ -14,11 +14,9 @@ class Solution {
                 return mid.0
             } else if mid.1 < target {
                 low = midIdx + 1
-                print(mid.0, mid.1, low)
             } else {
                 high = midIdx - 1
             }
-            print(low, high)
         }
 
         return sortedNums[low].1 == target ? sortedNums[low].0 : -1
