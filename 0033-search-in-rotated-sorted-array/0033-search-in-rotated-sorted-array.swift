@@ -1,22 +1,28 @@
 class Solution {
     func search(_ nums: [Int], _ target: Int) -> Int {
-        let sortedNums = nums.enumerated().sorted { $0.1 < $1.1 }
-        var low = 0
-        var high = nums.count - 1
+        var start = 0
+        var end = nums.count - 1
 
-        while low < high {
-            let midIdx = (low + high) / 2
-            let mid = sortedNums[midIdx]
+        while start <= end {
+            let mid = (start + end) / 2
 
-            if mid.1 == target {
-                return mid.0
-            } else if mid.1 < target {
-                low = midIdx + 1
-            } else {
-                high = midIdx - 1
+            guard nums[mid] != target else { return mid }
+
+            if nums[mid] < nums[end] {
+                if nums[mid] < target && target <= nums[end] {
+                    start = mid + 1
+                } else {
+                    end = mid - 1
+                }
+            } else { // nums[mid] > nums[end]
+                if nums[start] <= target && target < nums[mid] {
+                    end = mid - 1
+                } else {
+                    start = mid + 1
+                }
             }
         }
 
-        return sortedNums[low].1 == target ? sortedNums[low].0 : -1
+        return -1
     }
 }
