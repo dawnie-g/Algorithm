@@ -21,15 +21,6 @@ class Solution {
             return []
         }
         
-        arr.append(root.val)
-        
-        if let leftChild = root.left {
-            preorderTraversal(leftChild)
-        }
-        if let rightChild = root.right {
-            preorderTraversal(rightChild)
-        }
-        
-        return arr
+        return [root.val] + preorderTraversal(root.left) + preorderTraversal(root.right)
     }
 }
