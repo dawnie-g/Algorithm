@@ -7,6 +7,7 @@ update for solved algorithm problems
 | ------- |
 | [0001-two-sum](https://github.com/KwakDADA/Algorithm/tree/master/0001-two-sum) |
 | [0033-search-in-rotated-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0033-search-in-rotated-sorted-array) |
+| [0860-design-circular-queue](https://github.com/KwakDADA/Algorithm/tree/master/0860-design-circular-queue) |
 # Hash Table
 |  |
 | ------- |
@@ -25,3 +26,15 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0374-guess-number-higher-or-lower](https://github.com/KwakDADA/Algorithm/tree/master/0374-guess-number-higher-or-lower) |
+# Linked List
+|  |
+| ------- |
+| [0860-design-circular-queue](https://github.com/KwakDADA/Algorithm/tree/master/0860-design-circular-queue) |
+# Design
+|  |
+| ------- |
+| [0860-design-circular-queue](https://github.com/KwakDADA/Algorithm/tree/master/0860-design-circular-queue) |
+# Queue
+|  |
+| ------- |
+| [0860-design-circular-queue](https://github.com/KwakDADA/Algorithm/tree/master/0860-design-circular-queue) |
