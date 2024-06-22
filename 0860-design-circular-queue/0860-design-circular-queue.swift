@@ -1,68 +1,69 @@
 class MyCircularQueue {
 
-    var circularQueue: [Int?]
-    var head: Int
-    var tail: Int
-    let size: Int
-    
+    private var bufferRing: [Int]
+    private var head: Int
+    private var tail: Int
+
     init(_ k: Int) {
-        circularQueue = [Int?](repeating: nil, count: k)
+        bufferRing = .init(repeating: -1, count: k)
         head = 0
         tail = 0
-        size = k
     }
     
     func enQueue(_ value: Int) -> Bool {
         guard !isFull() else { return false }
-        circularQueue[tail] = value
-        tail += 1
-        tail %= size
-        
+        if isEmpty() {
+            bufferRing[head] = value
+        } else {
+             bufferRing[tail] = value
+        }
+        if bufferRing[circularNext(from: tail)] == -1 {
+            tail = circularNext(from: tail)
+        }
         return true
     }
     
     func deQueue() -> Bool {
         guard !isEmpty() else { return false }
-        circularQueue[head] = nil
-        head += 1
-        head %= size
+        bufferRing[head] = -1
+        if bufferRing[circularNext(from: head)] != -1 {
+            head = circularNext(from: head)
+        }
+        if isEmpty() {
+            tail = head
+        } else if bufferRing[tail] != -1, bufferRing[circularNext(from: tail)] == -1 {
+            tail = circularNext(from: tail)
+        }
         return true
     }
     
     func Front() -> Int {
-        if let value = circularQueue[head] {
-            return value
-        } else {
-            return -1
-        }
+        bufferRing[head]
     }
     
     func Rear() -> Int {
-        let rear = (tail + size - 1) % size
-        
-        if let value = circularQueue[rear] {
-            return value
+        if isEmpty() {
+            -1
+        } else if isFull() {
+            bufferRing[tail]
         } else {
-            return -1
+            bufferRing[circularPrev(from: tail)]
         }
     }
     
     func isEmpty() -> Bool {
-        return circularQueue[head] == nil
+        bufferRing[head] == -1 && bufferRing[tail] == -1
     }
     
     func isFull() -> Bool {
-        return circularQueue[tail] != nil
+        bufferRing[head] != -1 && bufferRing[tail] != -1
+    }
+
+    private func circularNext(from index: Int) -> Int {
+        index + 1 < bufferRing.count ? index + 1 : 0
+    }
+
+    private func circularPrev(from index: Int) -> Int {
+        index - 1 >= 0 ? index - 1 : bufferRing.count - 1
     }
 }
-
-/**
- * Your MyCircularQueue object will be instantiated and called as such:
- * let obj = MyCircularQueue(k)
- * let ret_1: Bool = obj.enQueue(value)
- * let ret_2: Bool = obj.deQueue()
- * let ret_3: Int = obj.Front()
- * let ret_4: Int = obj.Rear()
- * let ret_5: Bool = obj.isEmpty()
- * let ret_6: Bool = obj.isFull()
- */
