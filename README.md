@@ -38,3 +38,19 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0860-design-circular-queue](https://github.com/KwakDADA/Algorithm/tree/master/0860-design-circular-queue) |
+# Stack
+|  |
+| ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/KwakDADA/Algorithm/tree/master/0144-binary-tree-preorder-traversal) |
+# Tree
+|  |
+| ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/KwakDADA/Algorithm/tree/master/0144-binary-tree-preorder-traversal) |
+# Depth-First Search
+|  |
+| ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/KwakDADA/Algorithm/tree/master/0144-binary-tree-preorder-traversal) |
+# Binary Tree
+|  |
+| ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/KwakDADA/Algorithm/tree/master/0144-binary-tree-preorder-traversal) |
