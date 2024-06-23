@@ -15,7 +15,25 @@
  */
 class Solution {
     func postorderTraversal(_ root: TreeNode?) -> [Int] {
-        guard let root = root else { return [] }
-        return postorderTraversal(root.left) + postorderTraversal(root.right) + [root.val]
+        var stack = [TreeNode]()
+        var ans = [Int]()
+        var curr = root
+        var lastVisited: TreeNode? = nil
+
+        while curr != nil || !stack.isEmpty {
+            while let node = curr {
+                stack.append(node)
+                curr = node.left
+            }
+
+            let peekNode = stack.last!
+            if let rightChild = peekNode.right, lastVisited?.val != rightChild.val {
+                curr = rightChild
+            } else {
+                ans.append(peekNode.val)
+                lastVisited = stack.removeLast()
+            }
+        }
+        return ans
     }
 }
