@@ -14,13 +14,23 @@
  * }
  */
 class Solution {
-    var arr = [Int]()
-    
     func preorderTraversal(_ root: TreeNode?) -> [Int] {
-        guard let root = root else {
-            return []
+        var stack = [root]
+        var ans = [Int]()
+        
+        while !stack.isEmpty {
+            guard let curr = stack.removeLast() else { break }
+            ans.append(curr.val)
+            
+            if let rightChild = curr.right {
+                stack.append(rightChild)
+            }
+            
+            if let leftChild = curr.left {
+                stack.append(leftChild)
+            }
         }
         
-        return [root.val] + preorderTraversal(root.left) + preorderTraversal(root.right)
+        return ans
     }
 }
