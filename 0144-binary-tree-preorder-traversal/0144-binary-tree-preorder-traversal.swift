@@ -15,20 +15,21 @@
  */
 class Solution {
     func preorderTraversal(_ root: TreeNode?) -> [Int] {
-        guard let root = root else { return [] }
-        var stack = [root]
+        var stack = [TreeNode]()
         var ans = [Int]()
-        
-        while !stack.isEmpty {
-            let curr = stack.removeLast()
-            ans.append(curr.val)
-            
-            if let rightChild = curr.right {
-                stack.append(rightChild)
-            }
-            
-            if let leftChild = curr.left {
-                stack.append(leftChild)
+        var curr = root
+
+        while curr != nil || !stack.isEmpty {
+            if let node = curr {
+                ans.append(node.val)
+
+                if let rightChild = node.right {
+                    stack.append(rightChild)
+                }
+
+                curr = node.left
+            } else {
+                curr = stack.removeLast()
             }
         }
         return ans
