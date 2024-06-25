@@ -7,6 +7,7 @@ update for solved algorithm problems
 | ------- |
 | [0001-two-sum](https://github.com/KwakDADA/Algorithm/tree/master/0001-two-sum) |
 | [0033-search-in-rotated-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0033-search-in-rotated-sorted-array) |
+| [0643-maximum-average-subarray-i](https://github.com/KwakDADA/Algorithm/tree/master/0643-maximum-average-subarray-i) |
 | [0860-design-circular-queue](https://github.com/KwakDADA/Algorithm/tree/master/0860-design-circular-queue) |
 # Hash Table
 |  |
@@ -68,3 +69,7 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/KwakDADA/Algorithm/tree/master/0102-binary-tree-level-order-traversal) |
+# Sliding Window
+|  |
+| ------- |
+| [0643-maximum-average-subarray-i](https://github.com/KwakDADA/Algorithm/tree/master/0643-maximum-average-subarray-i) |
