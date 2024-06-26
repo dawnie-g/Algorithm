@@ -7,6 +7,7 @@ update for solved algorithm problems
 | ------- |
 | [0001-two-sum](https://github.com/KwakDADA/Algorithm/tree/master/0001-two-sum) |
 | [0033-search-in-rotated-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0033-search-in-rotated-sorted-array) |
+| [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
 | [0643-maximum-average-subarray-i](https://github.com/KwakDADA/Algorithm/tree/master/0643-maximum-average-subarray-i) |
 | [0860-design-circular-queue](https://github.com/KwakDADA/Algorithm/tree/master/0860-design-circular-queue) |
 # Hash Table
@@ -58,6 +59,7 @@ update for solved algorithm problems
 | [0094-binary-tree-inorder-traversal](https://github.com/KwakDADA/Algorithm/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/KwakDADA/Algorithm/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/KwakDADA/Algorithm/tree/master/0145-binary-tree-postorder-traversal) |
+| [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
 # Binary Tree
 |  |
 | ------- |
@@ -69,7 +71,16 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/KwakDADA/Algorithm/tree/master/0102-binary-tree-level-order-traversal) |
+| [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
 # Sliding Window
 |  |
 | ------- |
 | [0643-maximum-average-subarray-i](https://github.com/KwakDADA/Algorithm/tree/master/0643-maximum-average-subarray-i) |
+# Union Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
+# Matrix
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
