@@ -1,34 +1,44 @@
 class Solution {
-    func validPath(_ n: Int, _ edges: [[Int]], _ source: Int, _ destination: Int) -> Bool {
-        var graph = [Int: [Int]]()
+    class UnionFind {
+        var parent: [Int]
+        var rank: [Int]
 
-        for edge in edges {
-            let u = edge[0]
-            let v = edge[1]
-
-            graph[u, default: []].append(v)
-            graph[v, default: []].append(u)
+        init(_ n: Int) {
+            parent = Array(0..<n)
+            rank = [Int](repeating: 0, count: n)
         }
 
-        var stack = [source]
-        var visited = [Bool](repeating: false, count: n)
+        func find(_ x: Int) -> Int {
+            if parent[x] != x {
+                parent[x] = find(parent[x])
+            }
+            return parent[x]
+        }
 
-        if source == destination { return true }
-        visited[source] = true
+        func union(_ x: Int, _ y: Int) {
+            let rootX = find(x)
+            let rootY = find(y)
 
-        while !stack.isEmpty {
-            let curr = stack.removeLast()
-
-            guard let neighbors = graph[curr] else { continue }
-
-            for neighbor in neighbors where !visited[neighbor] {
-                if neighbor == destination { return true }
-
-                stack.append(neighbor)
-                visited[neighbor] = true
+            if rootX != rootY {
+                if rank[rootX] < rank[rootY] {
+                    parent[rootX] = rootY
+                } else if rank[rootY] < rank[rootX] {
+                    parent[rootY] = rootX
+                } else { // rank[rootX] == rank[rootY]
+                    parent[rootY] = rootX
+                    rank[rootX] += 1
+                }
             }
         }
+    }
 
-        return false
+    func validPath(_ n: Int, _ edges: [[Int]], _ source: Int, _ destination: Int) -> Bool {
+        let uf = UnionFind(n)
+
+        for edge in edges {
+            uf.union(edge[0], edge[1])
+        }
+
+        return uf.find(source) == uf.find(destination)
     }
 }
