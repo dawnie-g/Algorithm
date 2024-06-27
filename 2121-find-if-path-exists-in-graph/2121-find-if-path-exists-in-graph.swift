@@ -9,27 +9,22 @@ class Solution {
             graph[u, default: []].append(v)
             graph[v, default: []].append(u)
         }
-        print(graph)
 
-        var queue = [source]
-        var head = 0
-        var tail = 1
+        var stack = [source]
         var visited = [Bool](repeating: false, count: n)
 
         if source == destination { return true }
         visited[source] = true
 
-        while head < tail {
-            let curr = queue[head]
-            head += 1
-            
+        while !stack.isEmpty {
+            let curr = stack.removeLast()
+
             guard let neighbors = graph[curr] else { continue }
 
             for neighbor in neighbors where !visited[neighbor] {
                 if neighbor == destination { return true }
 
-                queue.append(neighbor)
-                tail += 1
+                stack.append(neighbor)
                 visited[neighbor] = true
             }
         }
