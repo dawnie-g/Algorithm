@@ -18,6 +18,7 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0069-sqrtx](https://github.com/KwakDADA/Algorithm/tree/master/0069-sqrtx) |
+| [1236-n-th-tribonacci-number](https://github.com/KwakDADA/Algorithm/tree/master/1236-n-th-tribonacci-number) |
 # Binary Search
 |  |
 | ------- |
@@ -91,3 +92,11 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [2121-find-if-path-exists-in-graph](https://github.com/KwakDADA/Algorithm/tree/master/2121-find-if-path-exists-in-graph) |
+# Dynamic Programming
+|  |
+| ------- |
+| [1236-n-th-tribonacci-number](https://github.com/KwakDADA/Algorithm/tree/master/1236-n-th-tribonacci-number) |
+# Memoization
+|  |
+| ------- |
+| [1236-n-th-tribonacci-number](https://github.com/KwakDADA/Algorithm/tree/master/1236-n-th-tribonacci-number) |
