@@ -100,3 +100,18 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [1236-n-th-tribonacci-number](https://github.com/KwakDADA/Algorithm/tree/master/1236-n-th-tribonacci-number) |
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
+## Matrix
+|  |
+| ------- |
+| [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
+## Simulation
+|  |
+| ------- |
+| [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
+<!---LeetCode Topics End-->
