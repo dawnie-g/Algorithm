@@ -5,8 +5,6 @@ class Solution {
         var result: [Int] = []
 
         while idx1 < m || idx2 < n {
-            print(idx1, idx2)
-
             guard idx1 < m else { 
                 result.append(nums2[idx2])
                 idx2 += 1
