@@ -105,6 +105,7 @@ update for solved algorithm problems
 ## Array
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0088-merge-sorted-array) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 ## Matrix
 |  |
@@ -114,4 +115,12 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
+## Two Pointers
+|  |
+| ------- |
+| [0088-merge-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0088-merge-sorted-array) |
+## Sorting
+|  |
+| ------- |
+| [0088-merge-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0088-merge-sorted-array) |
 <!---LeetCode Topics End-->
