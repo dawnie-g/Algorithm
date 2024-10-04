@@ -1,10 +1,14 @@
 class Solution {
     func countBits(_ n: Int) -> [Int] {
-        var ans: [Int] = []
-        for i in 0...n {
-            let bin = String(i, radix: 2)
-            ans.append(bin.filter { $0 == "1" }.count)
+        var dp = [Int](repeating: 0, count: n + 1)
+        var offset = 1
+        if n == 0 { return [0] }
+        for i in 1...n {
+            if offset * 2 == i {
+                offset = i
+            }
+            dp[i] = 1 + dp[i-offset]
         }
-        return ans
+        return dp
     }
 }
