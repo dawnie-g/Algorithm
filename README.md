@@ -123,4 +123,12 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0088-merge-sorted-array) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0338-counting-bits](https://github.com/KwakDADA/Algorithm/tree/master/0338-counting-bits) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0338-counting-bits](https://github.com/KwakDADA/Algorithm/tree/master/0338-counting-bits) |
 <!---LeetCode Topics End-->
