@@ -3,14 +3,15 @@ class Solution {
         guard n > 1 else { return 1 }
         guard n > 2 else { return 2 }
 
-        var dp = [Int](repeating: 0, count: n + 1)
-        dp[1] = 1
-        dp[2] = 2
+        var prev1 = 2
+        var prev2 = 1
         
-        for i in 3...n {
-            dp[i] = dp[i-1] + dp[i-2]
+        for _ in 3...n {
+            let curr = prev1 + prev2
+            prev2 = prev1
+            prev1 = curr
         }
 
-        return dp[n]
+        return prev1
     }
 }
