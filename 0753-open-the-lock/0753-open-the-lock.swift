@@ -1,5 +1,6 @@
 class Solution {
     func openLock(_ deadends: [String], _ target: String) -> Int {
+        let deadends = Set(deadends)
         guard !deadends.contains ("0000") else { return -1 }
         let target = target.map { Int(String($0))! }
         let direction = [
