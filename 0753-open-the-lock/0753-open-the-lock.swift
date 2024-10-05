@@ -24,7 +24,8 @@ class Solution {
 
                 for dir in direction {
                     let arr = (0...3).map { (curr[$0] + dir[$0] + 10) % 10 }
-                    if visited[arrToIdx(arr)] || deadends.contains(arr.map { String($0) }.joined()) { continue }
+                    if visited[arrToIdx(arr)] { continue }
+                    if deadends.contains(arr.map { String($0) }.joined()) { continue }
                     visited[arrToIdx(arr)] = true
                     queue.append(arr)
                     tail += 1
