@@ -15,7 +15,8 @@ class Solution {
         var tail = 1
         
         while head != tail {
-            for _ in 0..<tail-head {
+            let size = tail - head
+            for _ in 0..<size {
                 let curr = queue[head]
                 if curr == target { return step }
                 head += 1
