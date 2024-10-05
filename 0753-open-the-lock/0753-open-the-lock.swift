@@ -39,5 +39,5 @@ class Solution {
 }
 
 func arrToIdx(_ arr: [Int]) -> Int {
-    return Int(arr.map { String($0) }.joined())!
+    return arr[0] * 1000 + arr[1] * 100 + arr[2] * 10 + arr[3]
 }
