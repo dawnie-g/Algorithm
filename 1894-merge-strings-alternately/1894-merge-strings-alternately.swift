@@ -21,15 +21,15 @@ class Solution {
             let minSize = min(size1, size2)
 
             for i in 0..<minSize {
-                ans += String(arr1[i])
-                ans += String(arr2[i])
+                ans.append(arr1[i])
+                ans.append(arr2[i])
             }
 
             ans += size1 > size2 ? String(arr1[minSize...size1 - 1]) : String(arr2[minSize...size2 - 1])
         } else {
             for i in 0..<size1 {
-                ans += String(arr1[i])
-                ans += String(arr2[i])
+                ans.append(arr1[i])
+                ans.append(arr2[i])
             }
         }
 
