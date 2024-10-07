@@ -12,14 +12,11 @@ class Solution {
             var sum = curr.0
             let count = curr.1
 
-            if sum == n {
-                return count
-            }
-
             for i in 0..<squares.count {
                 let newSum = sum + squares[i]
+                if newSum == n { return count + 1 }
 
-                if newSum <= n && !visited[newSum] {
+                if newSum < n && !visited[newSum] {
                     queue.append((newSum, count + 1))
                     tail += 1
                     visited[newSum] = true
