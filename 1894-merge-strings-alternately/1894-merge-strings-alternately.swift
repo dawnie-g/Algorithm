@@ -24,9 +24,8 @@ class Solution {
                 ans.append(arr1[i])
                 ans.append(arr2[i])
             }
-            print(arr1.suffix(size1 - minSize))
-            print(arr2.suffix(size2 - minSize))
-            ans += size1 > size2 ? String(arr1[minSize...size1 - 1]) : String(arr2[minSize...size2 - 1])
+            
+            ans += size1 > size2 ? String(arr1.suffix(size1 - minSize)) : String(arr2.suffix(size2 - minSize))
         } else {
             for i in 0..<size1 {
                 ans.append(arr1[i])
