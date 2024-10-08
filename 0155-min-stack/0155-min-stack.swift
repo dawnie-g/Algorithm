@@ -2,17 +2,21 @@
 class MinStack {
 
     var stack: [Int]
+    var minStack: [Int]
 
     init() {
         stack = []
+        minStack = []
     }
     
     func push(_ val: Int) {
         stack.append(val)
+        minStack.append(min(minStack.last ?? val, val))
     }
     
     func pop() {
-        print(stack.removeLast())
+        stack.removeLast()
+        minStack.removeLast()
     }
     
     func top() -> Int {
@@ -20,7 +24,7 @@ class MinStack {
     }
     
     func getMin() -> Int {
-        return stack.min()!
+        return minStack.last!
     }
 }
 
