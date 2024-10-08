@@ -171,4 +171,12 @@ update for solved algorithm problems
 | ------- |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
+## Stack
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/KwakDADA/Algorithm/tree/master/0155-min-stack) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/KwakDADA/Algorithm/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->
