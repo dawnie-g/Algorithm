@@ -123,6 +123,7 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0088-merge-sorted-array) |
+| [0125-valid-palindrome](https://github.com/KwakDADA/Algorithm/tree/master/0125-valid-palindrome) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
 ## Sorting
 |  |
@@ -169,6 +170,7 @@ update for solved algorithm problems
 ## String
 |  |
 | ------- |
+| [0125-valid-palindrome](https://github.com/KwakDADA/Algorithm/tree/master/0125-valid-palindrome) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
 ## Stack
