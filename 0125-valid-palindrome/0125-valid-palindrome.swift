@@ -1,14 +1,14 @@
 class Solution {
     func isPalindrome(_ s: String) -> Bool {
         var alphanumeric: [Character] = []
+        var size = 0
 
         s.forEach {
             if $0.isLetter || $0.isNumber {
                 alphanumeric.append($0)
+                size += 1
             }
         }
-
-        let size = alphanumeric.count
         
         guard size > 0 else { return true }
             
