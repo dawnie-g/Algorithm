@@ -11,16 +11,14 @@ class Solution {
         }
         
         guard size > 0 else { return true }
-
+            
+        var p1 = 0
+        var p2 = size - 1
         for i in 0..<(size / 2) {
-            var c1 = alphanumeric[i]
-            var c2 = alphanumeric[size - 1 - i]
+            let c1 = alphanumeric[p1 + i].lowercased()
+            let c2 = alphanumeric[p2 - i].lowercased()
 
-            if c1.isLetter && c2.isLetter {
-                if c1.lowercased() != c2.lowercased() { 
-                    return false
-                }
-            } else if c1 != c2 {
+            if c1 != c2 {
                 return false
             }
         }
