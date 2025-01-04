@@ -105,6 +105,7 @@ update for solved algorithm problems
 ## Array
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/KwakDADA/Algorithm/tree/master/0027-remove-element) |
 | [0088-merge-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0088-merge-sorted-array) |
 | [0198-house-robber](https://github.com/KwakDADA/Algorithm/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
@@ -122,6 +123,7 @@ update for solved algorithm problems
 ## Two Pointers
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/KwakDADA/Algorithm/tree/master/0027-remove-element) |
 | [0088-merge-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/KwakDADA/Algorithm/tree/master/0125-valid-palindrome) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
