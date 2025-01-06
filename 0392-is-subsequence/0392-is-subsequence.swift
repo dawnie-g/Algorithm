@@ -1,20 +1,19 @@
 class Solution {
     func isSubsequence(_ s: String, _ t: String) -> Bool {
-        let s = s.map { $0 }
-        let t = t.map { $0 }
-        let sCount = s.count
-        var p = 0
+        var si = s.startIndex
+        var ti = t.startIndex
 
-        guard sCount > 0 else { return true }
+        guard !s.isEmpty else { return true }
+        guard !t.isEmpty else { return false }
 
-        for i in 0..<t.count {
-            if s[p] == t[i] {
-                p += 1
+        while si < s.endIndex && ti < t.endIndex {
+            if s[si] == t[ti] {
+                si = s.index(after: si)
+                if si == s.endIndex {
+                    return true
+                }
             }
-
-            if p == sCount {
-                return true
-            }
+            ti = t.index(after: ti)
         }
 
         return false
