@@ -126,6 +126,7 @@ update for solved algorithm problems
 | [0027-remove-element](https://github.com/KwakDADA/Algorithm/tree/master/0027-remove-element) |
 | [0088-merge-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/KwakDADA/Algorithm/tree/master/0125-valid-palindrome) |
+| [0392-is-subsequence](https://github.com/KwakDADA/Algorithm/tree/master/0392-is-subsequence) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
 ## Sorting
 |  |
@@ -138,6 +139,7 @@ update for solved algorithm problems
 | [0198-house-robber](https://github.com/KwakDADA/Algorithm/tree/master/0198-house-robber) |
 | [0279-perfect-squares](https://github.com/KwakDADA/Algorithm/tree/master/0279-perfect-squares) |
 | [0338-counting-bits](https://github.com/KwakDADA/Algorithm/tree/master/0338-counting-bits) |
+| [0392-is-subsequence](https://github.com/KwakDADA/Algorithm/tree/master/0392-is-subsequence) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -173,6 +175,7 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/KwakDADA/Algorithm/tree/master/0125-valid-palindrome) |
+| [0392-is-subsequence](https://github.com/KwakDADA/Algorithm/tree/master/0392-is-subsequence) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
 ## Stack
