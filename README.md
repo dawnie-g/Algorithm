@@ -175,11 +175,13 @@ update for solved algorithm problems
 ## Hash Table
 |  |
 | ------- |
+| [0383-ransom-note](https://github.com/KwakDADA/Algorithm/tree/master/0383-ransom-note) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 ## String
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/KwakDADA/Algorithm/tree/master/0125-valid-palindrome) |
+| [0383-ransom-note](https://github.com/KwakDADA/Algorithm/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/KwakDADA/Algorithm/tree/master/0392-is-subsequence) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
@@ -195,4 +197,8 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
+## Counting
+|  |
+| ------- |
+| [0383-ransom-note](https://github.com/KwakDADA/Algorithm/tree/master/0383-ransom-note) |
 <!---LeetCode Topics End-->
