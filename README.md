@@ -110,6 +110,7 @@ update for solved algorithm problems
 | [0198-house-robber](https://github.com/KwakDADA/Algorithm/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
+| [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
 | [1791-richest-customer-wealth](https://github.com/KwakDADA/Algorithm/tree/master/1791-richest-customer-wealth) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 ## Matrix
@@ -188,4 +189,8 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/KwakDADA/Algorithm/tree/master/0155-min-stack) |
+## Prefix Sum
+|  |
+| ------- |
+| [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
 <!---LeetCode Topics End-->
