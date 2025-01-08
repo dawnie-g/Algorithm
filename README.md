@@ -147,11 +147,13 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0338-counting-bits](https://github.com/KwakDADA/Algorithm/tree/master/0338-counting-bits) |
+| [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/KwakDADA/Algorithm/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
 ## Math
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/KwakDADA/Algorithm/tree/master/0070-climbing-stairs) |
 | [0279-perfect-squares](https://github.com/KwakDADA/Algorithm/tree/master/0279-perfect-squares) |
+| [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/KwakDADA/Algorithm/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
 ## Memoization
 |  |
 | ------- |
