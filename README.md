@@ -184,6 +184,7 @@ update for solved algorithm problems
 | [0383-ransom-note](https://github.com/KwakDADA/Algorithm/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/KwakDADA/Algorithm/tree/master/0392-is-subsequence) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
+| [1537-maximum-score-after-splitting-a-string](https://github.com/KwakDADA/Algorithm/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
 ## Stack
 |  |
@@ -196,6 +197,7 @@ update for solved algorithm problems
 ## Prefix Sum
 |  |
 | ------- |
+| [1537-maximum-score-after-splitting-a-string](https://github.com/KwakDADA/Algorithm/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
 ## Counting
 |  |
