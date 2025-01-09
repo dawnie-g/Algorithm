@@ -113,6 +113,7 @@ update for solved algorithm problems
 | [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
 | [1791-richest-customer-wealth](https://github.com/KwakDADA/Algorithm/tree/master/1791-richest-customer-wealth) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
+| [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## Matrix
 |  |
 | ------- |
@@ -186,6 +187,7 @@ update for solved algorithm problems
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/KwakDADA/Algorithm/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
+| [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## Stack
 |  |
 | ------- |
@@ -203,4 +205,20 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0383-ransom-note](https://github.com/KwakDADA/Algorithm/tree/master/0383-ransom-note) |
+## Trie
+|  |
+| ------- |
+| [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+## Rolling Hash
+|  |
+| ------- |
+| [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+## String Matching
+|  |
+| ------- |
+| [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+## Hash Function
+|  |
+| ------- |
+| [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 <!---LeetCode Topics End-->
