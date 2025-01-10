@@ -110,6 +110,7 @@ update for solved algorithm problems
 | [0198-house-robber](https://github.com/KwakDADA/Algorithm/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
+| [0952-word-subsets](https://github.com/KwakDADA/Algorithm/tree/master/0952-word-subsets) |
 | [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
 | [1791-richest-customer-wealth](https://github.com/KwakDADA/Algorithm/tree/master/1791-richest-customer-wealth) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/KwakDADA/Algorithm/tree/master/2292-counting-words-with-a-given-prefix) |
@@ -179,6 +180,7 @@ update for solved algorithm problems
 | ------- |
 | [0383-ransom-note](https://github.com/KwakDADA/Algorithm/tree/master/0383-ransom-note) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
+| [0952-word-subsets](https://github.com/KwakDADA/Algorithm/tree/master/0952-word-subsets) |
 ## String
 |  |
 | ------- |
@@ -186,6 +188,7 @@ update for solved algorithm problems
 | [0383-ransom-note](https://github.com/KwakDADA/Algorithm/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/KwakDADA/Algorithm/tree/master/0392-is-subsequence) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
+| [0952-word-subsets](https://github.com/KwakDADA/Algorithm/tree/master/0952-word-subsets) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/KwakDADA/Algorithm/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/KwakDADA/Algorithm/tree/master/2292-counting-words-with-a-given-prefix) |
