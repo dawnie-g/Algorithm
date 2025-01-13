@@ -193,12 +193,14 @@ update for solved algorithm problems
 | [1502-construct-k-palindrome-strings](https://github.com/KwakDADA/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/KwakDADA/Algorithm/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
+| [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/KwakDADA/Algorithm/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/KwakDADA/Algorithm/tree/master/2292-counting-words-with-a-given-prefix) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## Stack
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/KwakDADA/Algorithm/tree/master/0155-min-stack) |
+| [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/KwakDADA/Algorithm/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 ## Design
 |  |
 | ------- |
@@ -234,4 +236,5 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [1502-construct-k-palindrome-strings](https://github.com/KwakDADA/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
+| [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/KwakDADA/Algorithm/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 <!---LeetCode Topics End-->
