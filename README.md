@@ -109,6 +109,7 @@ update for solved algorithm problems
 | [0088-merge-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/0088-merge-sorted-array) |
 | [0198-house-robber](https://github.com/KwakDADA/Algorithm/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
+| [0485-max-consecutive-ones](https://github.com/KwakDADA/Algorithm/tree/master/0485-max-consecutive-ones) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 | [0952-word-subsets](https://github.com/KwakDADA/Algorithm/tree/master/0952-word-subsets) |
 | [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
