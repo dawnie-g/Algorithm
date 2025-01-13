@@ -112,6 +112,7 @@ update for solved algorithm problems
 | [0485-max-consecutive-ones](https://github.com/KwakDADA/Algorithm/tree/master/0485-max-consecutive-ones) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 | [0952-word-subsets](https://github.com/KwakDADA/Algorithm/tree/master/0952-word-subsets) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/KwakDADA/Algorithm/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
 | [1791-richest-customer-wealth](https://github.com/KwakDADA/Algorithm/tree/master/1791-richest-customer-wealth) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/KwakDADA/Algorithm/tree/master/2292-counting-words-with-a-given-prefix) |
@@ -157,6 +158,7 @@ update for solved algorithm problems
 | ------- |
 | [0070-climbing-stairs](https://github.com/KwakDADA/Algorithm/tree/master/0070-climbing-stairs) |
 | [0279-perfect-squares](https://github.com/KwakDADA/Algorithm/tree/master/0279-perfect-squares) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/KwakDADA/Algorithm/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/KwakDADA/Algorithm/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
 ## Memoization
 |  |
