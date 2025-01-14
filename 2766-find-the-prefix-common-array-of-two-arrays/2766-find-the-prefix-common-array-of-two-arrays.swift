@@ -4,7 +4,7 @@ class Solution {
         var visitedA = [Bool](repeating: false, count: n + 1)
         var visitedB = [Bool](repeating: false, count: n + 1)
         var arrayC: [Int] = []
-        arrayC.reserveCapacity(A.capacity)
+        arrayC.reserveCapacity(n + 1)
 
         for (a, b) in zip(A, B) {
             var common = arrayC.last ?? 0
