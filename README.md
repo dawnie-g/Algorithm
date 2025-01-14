@@ -118,6 +118,7 @@ update for solved algorithm problems
 | [1791-richest-customer-wealth](https://github.com/KwakDADA/Algorithm/tree/master/1791-richest-customer-wealth) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/KwakDADA/Algorithm/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
+| [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/KwakDADA/Algorithm/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## Matrix
 |  |
@@ -156,6 +157,7 @@ update for solved algorithm problems
 | ------- |
 | [0338-counting-bits](https://github.com/KwakDADA/Algorithm/tree/master/0338-counting-bits) |
 | [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/KwakDADA/Algorithm/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
+| [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/KwakDADA/Algorithm/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 ## Math
 |  |
 | ------- |
@@ -188,6 +190,7 @@ update for solved algorithm problems
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 | [0952-word-subsets](https://github.com/KwakDADA/Algorithm/tree/master/0952-word-subsets) |
 | [1502-construct-k-palindrome-strings](https://github.com/KwakDADA/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
+| [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/KwakDADA/Algorithm/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 ## String
 |  |
 | ------- |
