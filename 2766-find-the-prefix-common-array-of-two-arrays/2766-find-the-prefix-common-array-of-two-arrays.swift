@@ -3,11 +3,11 @@ class Solution {
         let n = A.count
         var visitedA = [Bool](repeating: false, count: n + 1)
         var visitedB = [Bool](repeating: false, count: n + 1)
-        var common: Int = 0
         var arrayC: [Int] = []
         arrayC.reserveCapacity(A.capacity)
 
         for (a, b) in zip(A, B) {
+            var common = arrayC.last ?? 0
             if a == b {
                 common += 1
             } else {
