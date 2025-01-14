@@ -119,6 +119,7 @@ update for solved algorithm problems
 | [2292-counting-words-with-a-given-prefix](https://github.com/KwakDADA/Algorithm/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/KwakDADA/Algorithm/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
+| [2831-number-of-beautiful-pairs](https://github.com/KwakDADA/Algorithm/tree/master/2831-number-of-beautiful-pairs) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## Matrix
 |  |
@@ -165,6 +166,7 @@ update for solved algorithm problems
 | [0279-perfect-squares](https://github.com/KwakDADA/Algorithm/tree/master/0279-perfect-squares) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/KwakDADA/Algorithm/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/KwakDADA/Algorithm/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
+| [2831-number-of-beautiful-pairs](https://github.com/KwakDADA/Algorithm/tree/master/2831-number-of-beautiful-pairs) |
 ## Memoization
 |  |
 | ------- |
@@ -191,6 +193,7 @@ update for solved algorithm problems
 | [0952-word-subsets](https://github.com/KwakDADA/Algorithm/tree/master/0952-word-subsets) |
 | [1502-construct-k-palindrome-strings](https://github.com/KwakDADA/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/KwakDADA/Algorithm/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
+| [2831-number-of-beautiful-pairs](https://github.com/KwakDADA/Algorithm/tree/master/2831-number-of-beautiful-pairs) |
 ## String
 |  |
 | ------- |
@@ -224,6 +227,7 @@ update for solved algorithm problems
 | ------- |
 | [0383-ransom-note](https://github.com/KwakDADA/Algorithm/tree/master/0383-ransom-note) |
 | [1502-construct-k-palindrome-strings](https://github.com/KwakDADA/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
+| [2831-number-of-beautiful-pairs](https://github.com/KwakDADA/Algorithm/tree/master/2831-number-of-beautiful-pairs) |
 ## Trie
 |  |
 | ------- |
@@ -246,4 +250,8 @@ update for solved algorithm problems
 | ------- |
 | [1502-construct-k-palindrome-strings](https://github.com/KwakDADA/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/KwakDADA/Algorithm/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
+## Number Theory
+|  |
+| ------- |
+| [2831-number-of-beautiful-pairs](https://github.com/KwakDADA/Algorithm/tree/master/2831-number-of-beautiful-pairs) |
 <!---LeetCode Topics End-->
