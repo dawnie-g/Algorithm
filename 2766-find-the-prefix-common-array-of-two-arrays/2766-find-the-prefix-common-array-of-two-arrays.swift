@@ -1,23 +1,24 @@
 class Solution {
     func findThePrefixCommonArray(_ A: [Int], _ B: [Int]) -> [Int] {
-        var setA: Set<Int> = []
-        var setB: Set<Int> = []
+        let n = A.count
+        var visitedA = [Bool](repeating: false, count: n + 1)
+        var visitedB = [Bool](repeating: false, count: n + 1)
         var common: Int = 0
         var arrayC: [Int] = []
         arrayC.reserveCapacity(A.capacity)
 
-        for (n, m) in zip(A, B) {
-            if n == m {
+        for (a, b) in zip(A, B) {
+            if a == b {
                 common += 1
             } else {
-                if setA.contains(m) {
+                if visitedA[b] {
                     common += 1
                 }
-                if setB.contains(n) {
+                if visitedB[a] {
                     common += 1
                 }
-                setA.insert(n)
-                setB.insert(m)
+                visitedA[a] = true
+                visitedB[b] = true
             }
             arrayC.append(common)
         }
