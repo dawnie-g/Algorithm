@@ -117,6 +117,7 @@ update for solved algorithm problems
 | [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
 | [1791-richest-customer-wealth](https://github.com/KwakDADA/Algorithm/tree/master/1791-richest-customer-wealth) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/KwakDADA/Algorithm/tree/master/2292-counting-words-with-a-given-prefix) |
+| [2533-bitwise-xor-of-all-pairings](https://github.com/KwakDADA/Algorithm/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/KwakDADA/Algorithm/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2831-number-of-beautiful-pairs](https://github.com/KwakDADA/Algorithm/tree/master/2831-number-of-beautiful-pairs) |
@@ -158,6 +159,7 @@ update for solved algorithm problems
 | ------- |
 | [0338-counting-bits](https://github.com/KwakDADA/Algorithm/tree/master/0338-counting-bits) |
 | [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/KwakDADA/Algorithm/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
+| [2533-bitwise-xor-of-all-pairings](https://github.com/KwakDADA/Algorithm/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/KwakDADA/Algorithm/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 ## Math
 |  |
@@ -254,4 +256,8 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [2831-number-of-beautiful-pairs](https://github.com/KwakDADA/Algorithm/tree/master/2831-number-of-beautiful-pairs) |
+## Brainteaser
+|  |
+| ------- |
+| [2533-bitwise-xor-of-all-pairings](https://github.com/KwakDADA/Algorithm/tree/master/2533-bitwise-xor-of-all-pairings) |
 <!---LeetCode Topics End-->
