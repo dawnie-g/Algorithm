@@ -113,6 +113,7 @@ update for solved algorithm problems
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 | [0952-word-subsets](https://github.com/KwakDADA/Algorithm/tree/master/0952-word-subsets) |
 | [1019-squares-of-a-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/1019-squares-of-a-sorted-array) |
+| [1168-duplicate-zeros](https://github.com/KwakDADA/Algorithm/tree/master/1168-duplicate-zeros) |
 | [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/KwakDADA/Algorithm/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
@@ -142,6 +143,7 @@ update for solved algorithm problems
 | [0125-valid-palindrome](https://github.com/KwakDADA/Algorithm/tree/master/0125-valid-palindrome) |
 | [0392-is-subsequence](https://github.com/KwakDADA/Algorithm/tree/master/0392-is-subsequence) |
 | [1019-squares-of-a-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/1019-squares-of-a-sorted-array) |
+| [1168-duplicate-zeros](https://github.com/KwakDADA/Algorithm/tree/master/1168-duplicate-zeros) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
 ## Sorting
 |  |
