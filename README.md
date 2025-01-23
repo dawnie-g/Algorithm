@@ -113,6 +113,7 @@ update for solved algorithm problems
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 | [0952-word-subsets](https://github.com/KwakDADA/Algorithm/tree/master/0952-word-subsets) |
 | [1019-squares-of-a-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/1019-squares-of-a-sorted-array) |
+| [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/KwakDADA/Algorithm/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
 | [1791-richest-customer-wealth](https://github.com/KwakDADA/Algorithm/tree/master/1791-richest-customer-wealth) |
@@ -126,6 +127,7 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
+| [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
 | [1791-richest-customer-wealth](https://github.com/KwakDADA/Algorithm/tree/master/1791-richest-customer-wealth) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 ## Simulation
@@ -177,16 +179,19 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
+| [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
 | [0279-perfect-squares](https://github.com/KwakDADA/Algorithm/tree/master/0279-perfect-squares) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
+| [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
 ## Union Find
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
+| [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
 ## Hash Table
 |  |
 | ------- |
@@ -228,6 +233,7 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0383-ransom-note](https://github.com/KwakDADA/Algorithm/tree/master/0383-ransom-note) |
+| [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
 | [1502-construct-k-palindrome-strings](https://github.com/KwakDADA/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [2831-number-of-beautiful-pairs](https://github.com/KwakDADA/Algorithm/tree/master/2831-number-of-beautiful-pairs) |
 ## Trie
