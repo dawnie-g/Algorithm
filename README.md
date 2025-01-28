@@ -121,6 +121,7 @@ update for solved algorithm problems
 | [2292-counting-words-with-a-given-prefix](https://github.com/KwakDADA/Algorithm/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/KwakDADA/Algorithm/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
+| [2764-maximum-number-of-fish-in-a-grid](https://github.com/KwakDADA/Algorithm/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/KwakDADA/Algorithm/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2831-number-of-beautiful-pairs](https://github.com/KwakDADA/Algorithm/tree/master/2831-number-of-beautiful-pairs) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
@@ -131,6 +132,7 @@ update for solved algorithm problems
 | [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
 | [1791-richest-customer-wealth](https://github.com/KwakDADA/Algorithm/tree/master/1791-richest-customer-wealth) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
+| [2764-maximum-number-of-fish-in-a-grid](https://github.com/KwakDADA/Algorithm/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 ## Simulation
 |  |
 | ------- |
@@ -182,6 +184,7 @@ update for solved algorithm problems
 | ------- |
 | [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
 | [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
+| [2764-maximum-number-of-fish-in-a-grid](https://github.com/KwakDADA/Algorithm/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -189,11 +192,13 @@ update for solved algorithm problems
 | [0279-perfect-squares](https://github.com/KwakDADA/Algorithm/tree/master/0279-perfect-squares) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 | [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
+| [2764-maximum-number-of-fish-in-a-grid](https://github.com/KwakDADA/Algorithm/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 ## Union Find
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/KwakDADA/Algorithm/tree/master/0200-number-of-islands) |
 | [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
+| [2764-maximum-number-of-fish-in-a-grid](https://github.com/KwakDADA/Algorithm/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 ## Hash Table
 |  |
 | ------- |
