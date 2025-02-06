@@ -114,6 +114,7 @@ update for solved algorithm problems
 | [0952-word-subsets](https://github.com/KwakDADA/Algorithm/tree/master/0952-word-subsets) |
 | [1019-squares-of-a-sorted-array](https://github.com/KwakDADA/Algorithm/tree/master/1019-squares-of-a-sorted-array) |
 | [1168-duplicate-zeros](https://github.com/KwakDADA/Algorithm/tree/master/1168-duplicate-zeros) |
+| [1364-tuple-with-same-product](https://github.com/KwakDADA/Algorithm/tree/master/1364-tuple-with-same-product) |
 | [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/KwakDADA/Algorithm/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
@@ -205,6 +206,7 @@ update for solved algorithm problems
 | [0383-ransom-note](https://github.com/KwakDADA/Algorithm/tree/master/0383-ransom-note) |
 | [0753-open-the-lock](https://github.com/KwakDADA/Algorithm/tree/master/0753-open-the-lock) |
 | [0952-word-subsets](https://github.com/KwakDADA/Algorithm/tree/master/0952-word-subsets) |
+| [1364-tuple-with-same-product](https://github.com/KwakDADA/Algorithm/tree/master/1364-tuple-with-same-product) |
 | [1502-construct-k-palindrome-strings](https://github.com/KwakDADA/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/KwakDADA/Algorithm/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/KwakDADA/Algorithm/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
@@ -242,6 +244,7 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0383-ransom-note](https://github.com/KwakDADA/Algorithm/tree/master/0383-ransom-note) |
+| [1364-tuple-with-same-product](https://github.com/KwakDADA/Algorithm/tree/master/1364-tuple-with-same-product) |
 | [1396-count-servers-that-communicate](https://github.com/KwakDADA/Algorithm/tree/master/1396-count-servers-that-communicate) |
 | [1502-construct-k-palindrome-strings](https://github.com/KwakDADA/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/KwakDADA/Algorithm/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
