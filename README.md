@@ -137,6 +137,7 @@ update for solved algorithm problems
 ## Simulation
 |  |
 | ------- |
+| [2021-remove-all-occurrences-of-a-substring](https://github.com/KwakDADA/Algorithm/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
 ## Two Pointers
 |  |
@@ -223,6 +224,7 @@ update for solved algorithm problems
 | [1537-maximum-score-after-splitting-a-string](https://github.com/KwakDADA/Algorithm/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/KwakDADA/Algorithm/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
+| [2021-remove-all-occurrences-of-a-substring](https://github.com/KwakDADA/Algorithm/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/KwakDADA/Algorithm/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/KwakDADA/Algorithm/tree/master/2292-counting-words-with-a-given-prefix) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
@@ -230,6 +232,7 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/KwakDADA/Algorithm/tree/master/0155-min-stack) |
+| [2021-remove-all-occurrences-of-a-substring](https://github.com/KwakDADA/Algorithm/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/KwakDADA/Algorithm/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 ## Design
 |  |
