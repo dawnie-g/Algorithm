@@ -127,6 +127,7 @@ update for solved algorithm problems
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/KwakDADA/Algorithm/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2831-number-of-beautiful-pairs](https://github.com/KwakDADA/Algorithm/tree/master/2831-number-of-beautiful-pairs) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+| [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/KwakDADA/Algorithm/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 ## Matrix
 |  |
 | ------- |
@@ -140,6 +141,7 @@ update for solved algorithm problems
 | ------- |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/KwakDADA/Algorithm/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2606-difference-between-ones-and-zeros-in-row-and-column](https://github.com/KwakDADA/Algorithm/tree/master/2606-difference-between-ones-and-zeros-in-row-and-column) |
+| [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/KwakDADA/Algorithm/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 ## Two Pointers
 |  |
 | ------- |
@@ -289,4 +291,5 @@ update for solved algorithm problems
 |  |
 | ------- |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/KwakDADA/Algorithm/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
+| [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/KwakDADA/Algorithm/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 <!---LeetCode Topics End-->
