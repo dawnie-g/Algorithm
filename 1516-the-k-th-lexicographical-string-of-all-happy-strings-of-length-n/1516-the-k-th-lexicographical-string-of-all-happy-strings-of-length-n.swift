@@ -13,9 +13,7 @@ class Solution {
                 return
             }
 
-            for char in happyChar {
-                guard result.isEmpty else { return }
-
+            for char in happyChar where result.isEmpty {
                 if str.isEmpty || str.last != char {
                     happyBT(str + "\(char)", count + 1)
                 }
