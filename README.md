@@ -119,6 +119,7 @@ update for solved algorithm problems
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/KwakDADA/Algorithm/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1603-running-sum-of-1d-array](https://github.com/KwakDADA/Algorithm/tree/master/1603-running-sum-of-1d-array) |
 | [1791-richest-customer-wealth](https://github.com/KwakDADA/Algorithm/tree/master/1791-richest-customer-wealth) |
+| [2107-find-unique-binary-string](https://github.com/KwakDADA/Algorithm/tree/master/2107-find-unique-binary-string) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/KwakDADA/Algorithm/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/KwakDADA/Algorithm/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/KwakDADA/Algorithm/tree/master/2533-bitwise-xor-of-all-pairings) |
@@ -215,6 +216,7 @@ update for solved algorithm problems
 | [1364-tuple-with-same-product](https://github.com/KwakDADA/Algorithm/tree/master/1364-tuple-with-same-product) |
 | [1502-construct-k-palindrome-strings](https://github.com/KwakDADA/Algorithm/tree/master/1502-construct-k-palindrome-strings) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/KwakDADA/Algorithm/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
+| [2107-find-unique-binary-string](https://github.com/KwakDADA/Algorithm/tree/master/2107-find-unique-binary-string) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/KwakDADA/Algorithm/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/KwakDADA/Algorithm/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2831-number-of-beautiful-pairs](https://github.com/KwakDADA/Algorithm/tree/master/2831-number-of-beautiful-pairs) |
@@ -233,6 +235,7 @@ update for solved algorithm problems
 | [1894-merge-strings-alternately](https://github.com/KwakDADA/Algorithm/tree/master/1894-merge-strings-alternately) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/KwakDADA/Algorithm/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/KwakDADA/Algorithm/tree/master/2021-remove-all-occurrences-of-a-substring) |
+| [2107-find-unique-binary-string](https://github.com/KwakDADA/Algorithm/tree/master/2107-find-unique-binary-string) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/KwakDADA/Algorithm/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/KwakDADA/Algorithm/tree/master/2292-counting-words-with-a-given-prefix) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/KwakDADA/Algorithm/tree/master/3309-count-prefix-and-suffix-pairs-i) |
@@ -301,4 +304,5 @@ update for solved algorithm problems
 | ------- |
 | [1160-letter-tile-possibilities](https://github.com/KwakDADA/Algorithm/tree/master/1160-letter-tile-possibilities) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/KwakDADA/Algorithm/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
+| [2107-find-unique-binary-string](https://github.com/KwakDADA/Algorithm/tree/master/2107-find-unique-binary-string) |
 <!---LeetCode Topics End-->
