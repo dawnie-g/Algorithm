@@ -5,6 +5,8 @@ func solution(_ begin:String, _ target:String, _ words:[String]) -> Int {
     var visited: [Bool] = [Bool](repeating: false, count: words.count)
     
     func dfs(_ currIndex: Int, _ count: Int) {
+        guard count < ans else { return }
+        
         let currWord = currIndex == -1 ? begin : words[currIndex]
         
         // 현재 단어가 타겟과 같으면 ans와 count를 비교, 더 작은 값을 ans에 할당
