@@ -6,8 +6,6 @@ func solution(_ begin:String, _ target:String, _ words:[String]) -> Int {
     
     func dfs(_ currIndex: Int, _ count: Int) {
         let currWord = currIndex == -1 ? begin : words[currIndex]
-        // print("currWord: \(currWord)")
-        // print("count: \(count)")
         
         // 현재 단어가 타겟과 같으면 ans와 count를 비교, 더 작은 값을 ans에 할당
         if currWord == target {
@@ -17,7 +15,6 @@ func solution(_ begin:String, _ target:String, _ words:[String]) -> Int {
         
         // 방문하지 않은 단어와 현재 단어를 비교
         outer: for i in 0..<words.count where visited[i] == false {
-            // print("비교 대상: \(words[i])")
             var diffChar = false
             
             // 한 글자씩 비교해가며 다른 글자가 두 개 나오면 비교를 끝내고 다음 단어로 넘어감
@@ -25,7 +22,6 @@ func solution(_ begin:String, _ target:String, _ words:[String]) -> Int {
                 if !diffChar { 
                     diffChar = true
                 } else {
-                    // print("다음 단어")
                     continue outer
                 }
             }
@@ -35,10 +31,9 @@ func solution(_ begin:String, _ target:String, _ words:[String]) -> Int {
                 visited[i] = true
                 dfs(i, count + 1)
                 visited[i] = false
-            } else { 
-                // 다른 글자가 하나도 없는 경우 -> 제한 사항에 의해 존재하지 않음
             }
         }
+        
         return
     }
     
