@@ -1,5 +1,6 @@
 import Foundation
 
+// BFS로 푸는게 시간적으로 더 절감될듯?
 func solution(_ begin:String, _ target:String, _ words:[String]) -> Int {
     var ans: Int = Int.max
     var visited: [Bool] = [Bool](repeating: false, count: words.count)
