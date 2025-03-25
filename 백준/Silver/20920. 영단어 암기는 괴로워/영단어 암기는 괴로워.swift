@@ -9,6 +9,6 @@ for _ in 0..<n {
     freq[word, default: 0] += 1
 }
 
-let list = freq.keys.sorted { (freq[$1]!, $1.count, $0) < (freq[$0]!, $0.count, $1) }
+let list = freq.sorted { ($1.value, $1.key.count, $0.key) < ($0.value, $0.key.count, $1.key) }
 
-print(list.joined(separator: "\n"))
+print(list.map { $0.key }.joined(separator: "\n"))
