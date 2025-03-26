@@ -14,9 +14,9 @@ import Foundation
 func solution(_ n:Int, _ edge:[[Int]]) -> Int {
     var graph: [Int: [Int]] = [:] // 연결된 노드
     var visited = [Bool](repeating: false, count: n + 1)
-    var queue: [(Int, Int)] = []
-    // var depth: [Int: [Int]] = [:]
-    var ans: (distance: Int, count: Int) = (0, 0)
+    var queue: [(node: Int, depth: Int)] = []
+    var head = 0, tail = 0
+    var maxDepth: (depth: Int, nodeCount: Int) = (0, 0)
     
     // 그래프 저장
     for e in edge {
@@ -24,35 +24,29 @@ func solution(_ n:Int, _ edge:[[Int]]) -> Int {
         graph[e[1], default: []].append(e[0])
     }
     
-    // print(graph)
-    
     queue.append((1, 0))
-    // depth[0, default: []].append(1)
-    ans.1 += 1
+    tail += 1
     visited[1] = true
     
-    while !queue.isEmpty {
-        let curr = queue.removeFirst()
-        let currNode = curr.0
-        let distance = curr.1
+    while head < tail {
+        let curr = queue[head]
+        head += 1
         
-        // depth[distance, default: []].append(currNode)
-        if distance > ans.distance {
-            ans.distance = distance
-            ans.count = 1
-        } else if distance == ans.distance {
-            ans.count += 1
+        if curr.depth > maxDepth.depth {
+            maxDepth.depth = curr.depth
+            maxDepth.nodeCount = 1
+        } else if curr.depth == maxDepth.depth {
+            maxDepth.nodeCount += 1
         }
         
-        guard let nodes = graph[currNode] else { break }
+        guard let nodes = graph[curr.node] else { continue }
         
         for node in nodes where !visited[node] {
-            queue.append((node, distance + 1))
+            queue.append((node, curr.depth + 1))
             visited[node] = true
+            tail += 1
         }
     }
     
-    
-    // print(depth)
-    return ans.count
+    return maxDepth.nodeCount
 }
