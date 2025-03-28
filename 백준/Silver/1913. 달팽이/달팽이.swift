@@ -1,18 +1,17 @@
 let n = Int(readLine()!)!
 let target = Int(readLine()!)!
-
 var map = [[Int]](repeating: [Int](repeating: 0, count: n), count: n)
+let dir: [(x: Int, y: Int)] = [(1, 0), (0, 1), (-1, 0), (0, -1)]
+
 var snail: (x: Int, y: Int) = (0, 0)
 var number = n * n
-
-let dir: [(x: Int, y: Int)] = [(1, 0), (0, 1), (-1, 0), (0, -1)]
 var currDir = 0
 var ans = (1, 1)
 
 outer: for level in stride(from: n, to: 1, by: -2) {
     var line = level
     
-    while true {
+    while line > 0 {
         map[snail.x][snail.y] = number
         
         if number == target {
@@ -26,10 +25,6 @@ outer: for level in stride(from: n, to: 1, by: -2) {
             currDir = (currDir + 1) % 4 // 방향 전환
             
             switch currDir {
-            case 0:
-                snail.x += dir[currDir].x
-                snail.y += dir[currDir].y
-                continue outer
             case 1, 2: line = level - 1
             case 3: line = level - 2
             default: break
