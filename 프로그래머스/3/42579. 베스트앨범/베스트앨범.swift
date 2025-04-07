@@ -1,37 +1,21 @@
 import Foundation
 
 func solution(_ genres:[String], _ plays:[Int]) -> [Int] {
-    var song = [[(Int, Int)]]()
-    var dic = [String:Int]()
-    var idx = 0
+    var stream: [String: [(id: Int, plays: Int)]] = [:]
+    var totalPlays: [String: Int] = [:]
+    var bestAlbum: [Int] = []
     
-    for (genre, play) in zip(genres, plays.enumerated()) {
-        // indexing
-        if !dic.keys.contains(genre) {
-            dic[genre] = idx
-            idx += 1
-        }
-        
-        // add song
-        if song.count < idx {
-            song.append([play])
-        } else {
-            song[dic[genre]!].append(play)
-        }
+    for i in 0..<genres.count {
+        stream[genres[i], default: []].append((i, plays[i]))
+        totalPlays[genres[i], default: 0] += plays[i]
     }
     
-    // condition 1
-    song.sort {
-        var a = 0
-        var b = 0
-        
-        $0.forEach { a += $0.1 }
-        $1.forEach { b += $0.1 }
-        
-        return a > b
+    for genre in totalPlays.sorted { $0.value > $1.value }.map { $0.key }  {
+        var sorted = stream[genre]!.sorted { $0.plays > $1.plays }.map({ $0.id })
+        bestAlbum.append(sorted[0])
+        guard sorted.count > 1 else { continue }
+        bestAlbum.append(sorted[1])
     }
     
-    // condition 2 and 3
-    let sortNSlice = song.map{$0.sorted{ ($0.1, $1.0) > ($1.1, $0.0) }.prefix(2)}
-    return sortNSlice.map{$0.map{$0.0}}.flatMap{$0}
+    return bestAlbum
 }
