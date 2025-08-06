@@ -3,7 +3,6 @@ class Solution {
         let len = arr.count
         guard len >= 3 else { return false }
         
-        var prev = arr[0]
         var increase = false
         var decrease = false
         var acrossTop = false
