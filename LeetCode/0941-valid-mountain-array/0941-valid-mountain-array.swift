@@ -5,23 +5,18 @@ class Solution {
         
         var increase = false
         var decrease = false
-        var acrossTop = false
 
         for i in 1..<len {
-            if !increase && !acrossTop && arr[i] > arr[i-1] {
+            if !increase && arr[i] > arr[i-1] {
                 increase = true
             }
 
-            if !acrossTop && arr[i] < arr[i-1] {
-                acrossTop = true
-            }
-
-            if !decrease && acrossTop && arr[i] < arr[i-1] {
+            if !decrease && arr[i] < arr[i-1] {
                 decrease = true
             }
 
-            let beforeTopDecreasing = !acrossTop && arr[i] < arr[i-1]
-            let afterTopIncreasing = acrossTop && arr[i] > arr[i-1]
+            let beforeTopDecreasing = !decrease && arr[i] < arr[i-1]
+            let afterTopIncreasing = decrease && arr[i] > arr[i-1]
             let notStrictly = arr[i] == arr[i-1]
             
             if beforeTopDecreasing || afterTopIncreasing || notStrictly {
