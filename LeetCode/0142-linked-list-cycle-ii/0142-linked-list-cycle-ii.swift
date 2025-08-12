@@ -16,11 +16,10 @@ class Solution {
         var fast = head
 
         while slow != nil {
-            if slow == nil && fast == nil { return nil }
-            
             slow = slow?.next
             fast = fast?.next?.next
 
+            if slow == nil && fast == nil { return nil }
             if slow === fast { break }
         }
 
