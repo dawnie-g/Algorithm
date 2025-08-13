@@ -10,13 +10,13 @@
  */
 class Solution {
     func removeElements(_ head: ListNode?, _ val: Int) -> ListNode? {
-        var curr = head
         var head = head
 
         while head?.val == val {
-            head = curr?.next
-            curr = curr?.next
+            head = head?.next
         }
+
+        var curr = head
 
         while curr != nil {
             if curr?.next?.val == val {
