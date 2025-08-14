@@ -1,10 +1,30 @@
 class Node {
     var val: Int
     var next: Node?
+    var prev: Node?
 
     init(val: Int) {
         self.val = val
         self.next = nil
+        self.prev = nil
+    }
+
+    init(val: Int, next: Node?) {
+        self.val = val
+        self.next = next
+        self.prev = nil
+    }
+
+    init(val: Int, prev: Node?) {
+        self.val = val
+        self.next = nil
+        self.prev = prev
+    }
+
+    init(val: Int, next: Node?, prev: Node?) {
+        self.val = val
+        self.next = next
+        self.prev = prev
     }
 }
 
@@ -20,14 +40,14 @@ class MyLinkedList {
     }
     
     func addAtHead(_ val: Int) {
-        let next = head
-        makeHead(val: val)
-        head?.next = next
+        let node = Node(val: val, next: head)
+        head?.prev = node
+        head = node
     }
     
     func addAtTail(_ val: Int) {
         guard var curr = head else { 
-            makeHead(val: val)
+            addAtHead(val)
             return
         }
 
@@ -35,36 +55,33 @@ class MyLinkedList {
             curr = next
         }
 
-        curr.next = Node(val: val)
+        let tail = Node(val: val, prev: curr)
+        curr.next = tail
     }
     
     func addAtIndex(_ index: Int, _ val: Int) {
         if index == 0 {
-            let next = head
             addAtHead(val)
-            head?.next = next
-        } else if let prev = getNode(at: index - 1) {
-            let new = Node(val: val)
-            let next = prev.next
-            prev.next = new
-            new.next = next
         }
+        
+        guard let prev = getNode(at: index - 1) else { return } 
+        let next = prev.next
+        let new = Node(val: val, next: next, prev: prev)
+        next?.prev = new
+        prev.next = new
     }
     
     func deleteAtIndex(_ index: Int) {
         if index == 0 { 
             head = head?.next
-        } else if let prev = getNode(at: index - 1) {
-            prev.next = prev.next?.next
+        } else if let node = getNode(at: index) {
+            let prev = node.prev
+            prev?.next = node.next
+            node.next?.prev = prev
         }
     }
 
     // MARK: - Helper Methods
-
-    private func makeHead(val: Int) {
-        let node = Node(val: val)
-        head = node
-    }
 
     private func getNode(at index: Int) -> Node? {
         guard index >= 0 else { return nil }
@@ -75,6 +92,16 @@ class MyLinkedList {
         }
 
         return curr
+    }
+
+    private func printList(_ method: String) {
+        var str = ""
+        var curr = head
+        while curr != nil {
+            str.append("\(curr!.val) ")
+            curr = curr?.next
+        }
+        print(method, str)
     }
 }
 
