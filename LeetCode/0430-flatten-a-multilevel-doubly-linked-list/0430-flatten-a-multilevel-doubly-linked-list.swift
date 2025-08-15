@@ -25,7 +25,6 @@ class Solution {
                 curr?.child = nil
                 curr?.next = child
                 child.prev = curr
-                curr = child
             } else if curr?.next == nil, !stack.isEmpty {
                 let parent = stack.removeLast()
                 curr?.next = parent
