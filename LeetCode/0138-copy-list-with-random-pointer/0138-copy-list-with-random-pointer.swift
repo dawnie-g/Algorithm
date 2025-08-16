@@ -18,26 +18,20 @@ class Solution {
         let headCopy: Node? = Node(head.val)
         var origin: Node? = head
         var curr = headCopy
-        var copy: [Node: Node] = [origin!: curr!]
-
-        origin = origin?.next
+        var copy: [Node: Node] = [:]
 
         while let o = origin {
-            curr?.next = Node(origin!.val)
-            curr = curr?.next
             copy[o] = curr
-            origin = o.next
-        }
-
-        origin = head
-
-        while let o = origin {
-            guard let random = o.random else { 
-                origin = o.next
-                continue
+            
+            if let r = o.random {
+                let randomCopy = copy[r] ?? Node(r.val)
+                curr?.random = randomCopy
+                copy[r] = randomCopy
             }
 
-            copy[o]?.random = copy[random]
+            guard let next = o.next else { break }
+            curr?.next = copy[next] ?? Node(next.val)
+            curr = curr?.next
             origin = o.next
         }
 
