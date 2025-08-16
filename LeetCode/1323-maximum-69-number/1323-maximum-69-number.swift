@@ -1,12 +1,11 @@
 class Solution {
     func maximum69Number (_ num: Int) -> Int {
-        var str = String(num).map { String($0) }
+        var str = String(num)
 
-        for i in 0..<str.count where str[i] == "6" {
-            str[i] = "9"
-            break
+        if let index = str.firstIndex(of: "6") {
+            str.replaceSubrange(index...index, with: "9")
         }
 
-        return Int(str.joined())!
+        return Int(str)!
     }
 }
