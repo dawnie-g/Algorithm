@@ -22,7 +22,7 @@ class Solution {
 
         origin = origin?.next
 
-        while var o = origin {
+        while let o = origin {
             curr?.next = Node(origin!.val)
             curr = curr?.next
             copy[o] = curr
@@ -31,16 +31,13 @@ class Solution {
 
         origin = head
 
-        while var o = origin {
+        while let o = origin {
             guard let random = o.random else { 
                 origin = o.next
                 continue
             }
 
-            let randomCopy = copy[random]
-            let copy = copy[o]
-
-            copy?.random = randomCopy
+            copy[o]?.random = copy[random]
             origin = o.next
         }
 
