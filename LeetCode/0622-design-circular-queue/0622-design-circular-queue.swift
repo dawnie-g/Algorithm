@@ -43,7 +43,7 @@ class MyCircularQueue {
     }
     
     func isFull() -> Bool {
-        head == tail && queue[head] != nil
+        queue[tail] != nil
     }
 }
 
