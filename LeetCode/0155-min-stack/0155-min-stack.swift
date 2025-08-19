@@ -1,17 +1,27 @@
 
 class MinStack {
     private var stack: [Int]
+    private var minStack: [Int]
 
     init() {
         stack = []
+        minStack = []
     }
     
     func push(_ val: Int) {
+        if minStack.isEmpty || minStack.last! >= val {
+            minStack.append(val)
+        }
+        
         stack.append(val)
     }
     
     func pop() {
-        stack.removeLast()
+        let val = stack.removeLast()
+
+        if !minStack.isEmpty && val == minStack.last! {
+            minStack.removeLast()
+        }
     }
     
     func top() -> Int {
@@ -19,7 +29,7 @@ class MinStack {
     }
     
     func getMin() -> Int {
-        stack.min()!
+        minStack.last!
     }
 }
 
