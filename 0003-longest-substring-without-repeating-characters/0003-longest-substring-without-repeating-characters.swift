@@ -16,7 +16,6 @@ class Solution {
             
             tail += 1
             lastIndex[c] = i
-            print(head, tail)
         }
 
         return max(maxCount, tail - head)
