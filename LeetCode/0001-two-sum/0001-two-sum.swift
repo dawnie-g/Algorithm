@@ -1,17 +1,15 @@
 class Solution {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         let n = nums.count
-        var ans = [0, 0]
+        var sum = [0, 0]
 
         for i in 0..<n {
-            for j in i + 1..<n {
-                if nums[i] + nums[j] == target {
-                    ans = [i, j]
-                    break
-                }
+            for j in i + 1..<n where nums[i] + nums[j] == target {
+                sum = [i, j]
+                break
             }
         }
 
-        return ans
+        return sum
     }
 }

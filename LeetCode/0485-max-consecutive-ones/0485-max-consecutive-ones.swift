@@ -1,17 +1,18 @@
 class Solution {
     func findMaxConsecutiveOnes(_ nums: [Int]) -> Int {
-        var maxVal = 0
-        var currVal = 0
+        let size = nums.count
+        var start = -1
+        var maxLen = 0
 
-        nums.forEach {
-            if $0 == 1 {
-                currVal += 1
-            } else {
-                maxVal = max(maxVal, currVal)
-                currVal = 0
-            }
+        for curr in 0..<size where nums[curr] == 0 {
+            maxLen = max(maxLen, curr - start - 1)
+            start = curr
         }
 
-        return max(maxVal, currVal)
+        if nums[size - 1] == 1 {
+            maxLen = max(maxLen, size - start - 1)
+        }
+
+        return maxLen
     }
 }

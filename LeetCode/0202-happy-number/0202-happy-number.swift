@@ -1,21 +1,28 @@
 class Solution {
     func isHappy(_ n: Int) -> Bool {
         var n = n
-        var visited = [Bool](repeating: false, count: 1_000)
+        var hashSet = Set<Int>()
 
         while n != 1 {
-            var num = n
-            var sum = 0
-            while num > 0 {
-                let digit = num % 10
-                sum += digit * digit
-                num /= 10
-            }
-            if visited[sum] { return false }
-            visited[sum] = true
-            n = sum
+            if hashSet.contains(n) { return false }
+            hashSet.insert(n)
+            n = sumDigitSquare(of: n)
+            print(n)
         }
 
-        return n == 1
+        return true
+    }
+
+    private func sumDigitSquare(of num: Int) -> Int {
+        var num = num
+        var sum = 0
+
+        while num > 0 {
+            let digit = num % 10
+            sum += digit * digit
+            num /= 10
+        }
+
+        return sum
     }
 }
