@@ -8,6 +8,8 @@ class Solution {
             return 
         }
         recursion(&s, head + 1, tail - 1)
-        s.swapAt(head, tail)
+        let temp = s[head]
+        s[head] = s[tail]
+        s[tail] = temp
     }
 }
