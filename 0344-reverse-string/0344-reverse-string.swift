@@ -1,15 +1,13 @@
 class Solution {
     func reverseString(_ s: inout [Character]) {
-        recursion(&s, 0, s.count)
+        recursion(&s, 0, s.count - 1)
     }
 
-    private func recursion(_ s: inout [Character], _ index: Int, _ len: Int) {
-        if index >= len / 2 { 
+    private func recursion(_ s: inout [Character], _ head: Int, _ tail: Int) {
+        if head >= tail { 
             return 
         }
-        recursion(&s, index + 1, len)
-        let temp = s[len - index - 1]
-        s[len - index - 1] = s[index]
-        s[index] = temp
+        recursion(&s, head + 1, tail - 1)
+        s.swapAt(head, tail)
     }
 }
