@@ -15,18 +15,14 @@
  */
 class Solution {
     func searchBST(_ root: TreeNode?, _ val: Int) -> TreeNode? {
-        var curr = root
+        guard let curr = root else { return nil }
 
-        while curr != nil {
-            if curr!.val == val {
-                return curr
-            } else if val < curr!.val {
-                curr = curr!.left
-            } else if val > curr!.val {
-                curr = curr!.right
-            }
+        if curr.val == val { return curr } 
+        
+        if val < curr.val {
+            return searchBST(curr.left, val)
+        } else {
+            return searchBST(curr.right, val)
         }
-
-        return nil
     }
 }
