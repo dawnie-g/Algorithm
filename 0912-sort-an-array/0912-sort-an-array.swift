@@ -1,30 +1,36 @@
 class Solution {
     func sortArray(_ nums: [Int]) -> [Int] {
-        if nums.count == 1 { return nums }
+        var sublists = nums.map { [$0] }
 
-        let count = nums.count
-        let list1 = sortArray(Array(nums[0..<count/2]))
-        let list2 = sortArray(Array(nums[count/2..<count]))
+        while sublists.count > 1 {
+            var newLists = [[Int]]()
+            
+            for i in 0..<sublists.count/2 {
+                let list1 = sublists[i * 2]
+                let list2 = sublists[i * 2 + 1]
+                var p1 = 0
+                var p2 = 0
+                var sortedList = [Int]()
 
-        let count1 = list1.count
-        let count2 = list2.count
-        var p1 = 0
-        var p2 = 0
-        var sorted = [Int]()
+                while true {
+                    if p1 == list1.count { sortedList += list2[p2..<list2.count]; break }
+                    if p2 == list2.count { sortedList += list1[p1..<list1.count]; break }
 
-        while true {
-            if p1 == count1 { sorted += list2[p2..<count2]; break }
-            if p2 == count2 { sorted += list1[p1..<count1]; break }
+                    if list1[p1] <= list2[p2] {
+                        sortedList.append(list1[p1])
+                        p1 += 1
+                    } else {
+                        sortedList.append(list2[p2])
+                        p2 += 1
+                    }
+                }
 
-            if list1[p1] <= list2[p2] {
-                sorted.append(list1[p1])
-                p1 += 1
-            } else {
-                sorted.append(list2[p2])
-                p2 += 1
+                newLists.append(sortedList)
             }
+            let last = sublists.count % 2 == 1 ? [sublists.last!] : []
+            sublists = newLists + last
         }
 
-        return sorted
+        return sublists.first!
     }
 }
